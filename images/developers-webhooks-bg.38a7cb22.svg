@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 701 201">
+  <g clip-path="url(#a)">
+    <rect width="343.42" height="316.08" x="1" y="1" fill="#0E1318" rx="8"/>
+    <rect width="343.42" height="316.08" x="1" y="1" fill="url(#b)" fill-opacity=".1" rx="8"/>
+    <line x1="0" y1="40" x2="345" y2="40" stroke="#fff" stroke-opacity=".15" />
+    <path fill="#fff" fill-rule="evenodd" d="M29.5 25a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" clip-rule="evenodd" opacity=".2"/>
+    <text xml:space="preserve" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="25" y="115.66">      </tspan><tspan x="118.69" y="115.66"> {
+</tspan><tspan x="25" y="133.66">        id
+</tspan><tspan x="25" y="151.66">        name
+</tspan><tspan x="25" y="169.66">        slug
+</tspan><tspan x="25" y="187.66">      </tspan></text>
+    <text xml:space="preserve" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="39.41" y="79.66">event</tspan><tspan x="104.28" y="97.66">ProductUpdated</tspan><tspan x="68.24" y="115.66">product</tspan></text>
+    <text xml:space="preserve" fill="#fff" fill-opacity=".4" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="25" y="61.66">subscription {
+</tspan><tspan x="25" y="79.66">  </tspan><tspan x="75.45" y="79.66"> {
+</tspan><tspan x="25" y="97.66">    ... on </tspan><tspan x="205.18" y="97.66"> {
+</tspan><tspan x="68.24" y="187.66">}
+</tspan><tspan x="25" y="205.66">    }
+</tspan><tspan x="25" y="223.66">  }
+</tspan><tspan x="25" y="241.66">}</tspan></text>
+  </g>
+  <rect width="344.42" height="317.08" x=".5" y=".5" stroke="#32363B" rx="8.5"/>
+  <g clip-path="url(#c)">
+    <rect width="396.35" height="316.08" x="368.42" y="1" fill="#0E1318" rx="8"/>
+    <rect width="396.35" height="316.08" x="368.42" y="1" fill="url(#d)" rx="8"/>
+    <line x1="0" y1="40" x2="7000" y2="40" stroke="#fff" stroke-opacity=".15" />
+    <path fill="#fff" fill-rule="evenodd" d="M384.92 25a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" clip-rule="evenodd" opacity=".2"/>
+    <rect width="282" height="23" x="443.42" y="9" fill="#fff" fill-opacity=".05" rx="5.09"/>
+    <rect width="281.35" height="22.35" x="443.74" y="9.33" stroke="#fff" stroke-opacity=".15" stroke-width=".65" rx="4.77"/>
+    <g clip-path="url(#e)">
+      <path fill="#9E9E9E" d="M512 25.35h4.74c.64 0 .96-.32.96-1.01v-3.65c0-.63-.26-.95-.8-1v-1.26c0-1.88-1.22-2.78-2.53-2.78-1.3 0-2.53.9-2.53 2.78v1.28c-.49.07-.79.39-.79.98v3.65c0 .7.31 1.01.96 1.01Zm.64-7.03c0-1.24.8-1.9 1.73-1.9.93 0 1.73.66 1.73 1.9v1.36h-3.46v-1.36Z"/>
+      <text xml:space="preserve" fill="#fff" font-family="SF Pro Text, 'Helvetica Neue', Roboto, Inter, sans-serif" font-size="11.03" letter-spacing="0em" style="white-space:pre"><tspan x="522.79" y="24.42">your-endpoint.com/orders</tspan></text>
+    </g>
+    <path fill="#000" fill-opacity=".1" d="M368.42 40h396.35v277.08H368.42z"/>
+    <text xml:space="preserve" fill="#6E7174" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="376.42" y="115.66">    </tspan><tspan x="448.49" y="115.66">: “Bean Juice”,
+</tspan></text>
+    <text xml:space="preserve" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="405.25" y="97.66">“i</tspan><tspan x="405.25" y="133.66">“slug”</tspan></text>
+    <text xml:space="preserve" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="455.69" y="79.66">:</tspan><tspan x="419.66" y="97.66">d”</tspan><tspan x="405.25" y="115.66">“name”</tspan></text>
+    <text xml:space="preserve" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="390.83" y="79.66">“product”</tspan></text>
+    <text xml:space="preserve" fill="#6E7174" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="376.42" y="79.66">  </tspan><tspan x="462.9" y="79.66"> </tspan><tspan x="455.69" y="97.66">UHJvZHVjdDo30Q==”,
+</tspan><tspan x="376.42" y="133.66">    </tspan><tspan x="448.49" y="133.66">: “bean-juice”
+</tspan></text>
+    <text xml:space="preserve" fill="#6E7174" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libe
+ration Mono', 'Courier New', monospace" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="376.42" y="61.66">{
+</tspan><tspan x="470.11" y="79.66">{
+</tspan><tspan x="376.42" y="97.66">    </tspan><tspan x="434.07" y="97.66">: “</tspan><tspan x="376.42" y="151.66">    }
+</tspan><tspan x="376.42" y="169.66">}</tspan></text>
+  </g>
+  <rect width="397.35" height="317.08" x="367.92" y=".5" stroke="#32363B" rx="8.5"/>
+  <defs>
+    <clipPath id="a">
+      <rect width="343.42" height="316.08" x="1" y="1" fill="#fff" rx="8"/>
+    </clipPath>
+    <clipPath id="c">
+      <rect width="396.35" height="316.08" x="368.42" y="1" fill="#fff" rx="8"/>
+    </clipPath>
+    <clipPath id="e">
+      <path fill="#fff" d="M511.05 14h150v13H511.05z"/>
+    </clipPath>
+    <linearGradient id="b" x1="172.71" x2="172.71" y1="1" y2="317.08" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".59"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="d" x1="368.42" x2="603.51" y1="143.5" y2="-284.69" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1318"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+    </linearGradient>
+  </defs>
+</svg>

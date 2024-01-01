@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en" class="__variable_e66fe9 __variable_e9495b overflow-x-hidden text-gray-900">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/705fb352bc5cba09.css" data-precedence="next">
+      <title>Chambea Ya</title>
+      <meta name="description" content="A headless, GraphQL-first e-commerce platform delivering ultra-fast, dynamic, personalized shopping experiences. Find out why developers love it.">
+      <meta property="og:title" content="Saleor Commerce">
+      <meta property="og:description" content="A headless, GraphQL-first e-commerce platform delivering ultra-fast, dynamic, personalized shopping experiences. Find out why developers love it.">
+      <meta property="og:site_name" content="Saleor Commerce">
+      <meta name="next-size-adjust">
+   </head>
+   <body class="overflow-x-hidden">
+      <header class="fixed top-0 z-50 h-16 w-full border-b border-gray-900/15 bg-white">
+         <nav role="navigation" class="relative z-40 mx-auto flex h-full max-w-7xl flex-row items-center justify-between gap-x-7 px-4 text-sm desktopnav:justify-start">
+            <a href="/">
+               <h1 class="h-5">
+                  <span class="sr-only">Saleor</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 86 20" width="84" height="20">
+                     <!-- <path fill="#161A1E" fill-rule="evenodd" d="M30.28 17.984c4.176 0 5.225-1.686 5.225-3.997 0-2.84-2.553-3.371-4.676-3.718-1.623-.277-2.363-.416-2.363-1.41 0-.738.644-1.016 1.695-1.016 1.287 0 1.645.37 1.765 1.455l3.389-.507c-.286-2.333-1.6-3.511-5.06-3.511-3.793 0-5.13 1.524-5.13 3.95-.023 3.141 2.935 3.464 5.13 3.834 1.36.254 1.886.485 1.886 1.385 0 .74-.454 1.063-1.814 1.063-1.502 0-1.956-.254-2.147-1.478l-3.293.485c.31 2.472 1.766 3.465 5.393 3.465m11.807-2.54c-1.6 0-2.172-.348-2.172-1.502 0-1.04.572-1.456 2.291-1.456h1.718v1.201c0 1.155-.573 1.756-1.837 1.756Zm-1.48 2.54c1.861 0 2.696-.6 3.293-1.478v1.317h3.365V9.46c0-2.794-1.074-4.203-4.797-4.203-3.603 0-4.867 1.016-5.369 3.51l3.341.508c.215-1.062.525-1.385 1.91-1.385 1.335 0 1.55.554 1.55 1.479v.854h-1.575c-4.27 0-5.727 1.293-5.727 3.927 0 2.587 1.313 3.834 4.01 3.834Zm7.993-.162h3.436V0L48.6 3.407v14.416Zm7.993-7.53v-.624c0-1.085.501-1.825 2.004-1.825 1.456 0 1.934.625 1.934 1.825v.624zm2.004 7.715c3.961 0 5.01-1.848 5.25-3.696l-3.269-.485c-.143 1.11-.358 1.687-1.98 1.687-1.647 0-2.005-.809-2.005-1.872v-1.016h7.253v-2.218c0-3.095-1.216-5.15-5.249-5.15-3.985 0-5.345 2.079-5.345 4.712v3.326c0 2.564 1.383 4.712 5.345 4.712m11.892 0c3.937 0 5.56-2.01 5.56-4.712V9.97c0-2.749-1.623-4.712-5.56-4.712-3.937 0-5.512 1.963-5.512 4.712v3.326c0 2.703 1.55 4.712 5.512 4.712Zm0-2.68c-1.384 0-2.076-.715-2.076-1.87V9.899c0-1.177.692-1.893 2.075-1.893 1.384 0 2.124.715 2.124 1.894v3.557c0 1.155-.74 1.87-2.123 1.87m12.015-6.545h-1.841v9.036h-3.437V8.782l3.357-3.407h5.278zM9.123 20a9.123 9.123 0 1 0 0-18.246 9.123 9.123 0 0 0 0 18.246m6.384-10.99H6.279L2.79 12.826h9.467z" clip-rule="evenodd"></path> -->
+                  </svg>
+               </h1>
+            </a>
+            <div id="menu-list" class="ml-auto desktopnav:flex desktopnav:w-full desktopnav:flex-row desktopnav:items-center desktopnav:gap-x-4">
+               <div class="hidden desktopnav:contents">
+                  <ul class="mb-6 flex flex-col gap-y-4 desktopnav:mb-0 desktopnav:mr-auto desktopnav:flex-row desktopnav:gap-x-2" role="menu">
+                     <li role="menuitem" class="group relative inline-flex items-center">
+                        <span class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" tabindex="0">
+                           <span class="inline-flex items-center">
+                              Product
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" class="ml-3 h-2 w-2 transform group-hover:rotate-180">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="m1 1 4 4 4-4"></path>
+                              </svg>
+                           </span>
+                           <div class="hidden w-full cursor-auto pt-2 group-focus-within:block group-hover:block desktopnav:absolute desktopnav:left-0 desktopnav:top-full desktopnav:w-auto">
+                              <ul role="menu" class="grid w-full gap-x-6 gap-y-4 rounded-lg border border-gray-300 bg-white p-2 text-base shadow-md desktopnav:w-max desktopnav:grid-cols-2">
+                                 <li role="menuitem">
+                                    <a class="grid grid-cols-[2rem,1fr] items-center rounded-lg p-2 hover:bg-gray-100 focus-visible:bg-gray-100" href="/features/merchandising">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 33" class="w-5 text-gray-600">
+                                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 13.03 10 6.11m18 15.72V11.17a2.67 2.67 0 0 0-1.33-2.31l-9.34-5.33a2.67 2.67 0 0 0-2.66 0L5.33 8.86A2.67 2.67 0 0 0 4 11.16v10.67a2.67 2.67 0 0 0 1.33 2.3l9.34 5.34a2.67 2.67 0 0 0 2.66 0l9.34-5.33a2.67 2.67 0 0 0 1.33-2.3Z"></path>
+                                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.36 9.78 16 16.5l11.64-6.73M16 29.94V16.5"></path>
+                                       </svg>
+                                       <div class="text-base font-medium">Merchandising</div>
+                                       <div class="col-start-2 mt-1 text-sm text-gray-600">Product Information Management</div>
+                                    </a>
+                                 </li>
+                                 <li role="menuitem">
+                                    <a class="grid grid-cols-[2rem,1fr] items-center rounded-lg p-2 hover:bg-gray-100 focus-visible:bg-gray-100" href="/features/development">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 25" class="w-5 text-gray-600">
+                                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.5 7 1 12.5 7.5 18M24 7l6.5 5.5L24 18"></path>
+                                          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m11.4 23.7 8.3-22.1"></path>
+                                       </svg>
+                                       <div class="text-base font-medium">Development</div>
+                                       <div class="col-start-2 mt-1 text-sm text-gray-600">Developer Experience in focus</div>
+                                    </a>
+                                 </li>
+                                 <li role="menuitem">
+                                    <a class="grid grid-cols-[2rem,1fr] items-center rounded-lg p-2 hover:bg-gray-100 focus-visible:bg-gray-100" href="/features/promotions">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" class="w-5 text-gray-600">
+                                          <path stroke="currentColor" stroke-width="1.4" d="M4.15 16.57v-.01a1.6 1.6 0 0 1-.5-1.17V5.83c0-.91.76-1.66 1.67-1.66h9.56c.45 0 .87.17 1.18.48l11.77 11.77c.67.67.66 1.71.01 2.36l-9.56 9.56c-.65.65-1.7.65-2.36 0zm12.24 11.3.7.71.71-.7 9.56-9.57.71-.7-.7-.71L15.58 5.13l-.3-.3H4.33v10.98l.3.29L16.4 27.87Z"></path>
+                                          <path fill="currentColor" stroke="currentColor" stroke-width="1.4" d="M9.66 9.17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+                                       </svg>
+                                       <div class="text-base font-medium">Promotions</div>
+                                       <div class="col-start-2 mt-1 text-sm text-gray-600">Advanced marketing tools</div>
+                                    </a>
+                                 </li>
+                                 <li role="menuitem">
+                                    <a class="grid grid-cols-[2rem,1fr] items-center rounded-lg p-2 hover:bg-gray-100 focus-visible:bg-gray-100" href="/features/checkout">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-5 text-gray-600">
+                                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 8.25V4.5C13 1 7 1 7 4.5v3.75M4 5.5h12a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1"></path>
+                                       </svg>
+                                       <div class="text-base font-medium">Checkout API</div>
+                                       <div class="col-start-2 mt-1 text-sm text-gray-600">Smooth payment process</div>
+                                    </a>
+                                 </li>
+                                 <li role="menuitem">
+                                    <a class="grid grid-cols-[2rem,1fr] items-center rounded-lg p-2 hover:bg-gray-100 focus-visible:bg-gray-100" href="/features/operations">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 24" class="w-5 text-gray-600">
+                                          <path fill="currentColor" d="M5.5 8v11h14V8h-3v6.375c0 .383-.158.671-.475.863a.95.95 0 0 1-.975.037L12.5 14l-2.55 1.275a.951.951 0 0 1-.975-.038c-.317-.192-.475-.479-.475-.861V8zm0 13c-.55 0-1.021-.196-1.413-.588A1.922 1.922 0 0 1 3.5 19V6.525c0-.233.038-.458.113-.675a1.96 1.96 0 0 1 .337-.6L5.2 3.725c.183-.233.412-.413.687-.538.275-.125.562-.188.863-.187h11.5c.3 0 .588.063.863.188s.504.304.687.537l1.25 1.525c.15.183.263.383.338.6.075.217.113.442.112.675V19c0 .55-.196 1.021-.588 1.413A1.922 1.922 0 0 1 19.5 21zm.4-15h13.2l-.85-1H6.75zm4.6 2v4.75l2-1 2 1V8z"></path>
+                                       </svg>
+                                       <div class="text-base font-medium">Operations</div>
+                                       <div class="col-start-2 mt-1 text-sm text-gray-600">Order Management System</div>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </span>
+                     </li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="https://apps.saleor.io/">App Store</a></li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="https://docs.saleor.io/">Docs</a></li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="/enterprise">Enterprise</a></li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="/experts">Experts</a></li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="/pricing">Pricing</a></li>
+                     <li class="group relative inline-flex items-center" role="menuitem"><a class="-mx-2 w-full flex flex-col cursor-pointer items-start rounded-lg px-2 py-1 desktopnav:mx-0" href="/blog">Blog</a></li>
+                  </ul>
+                  <a class="order-2 mx-0 mt-4 inline-flex w-full  flex-shrink-0 items-center justify-center rounded-lg px-2 py-1 hover:bg-gray-100 focus:bg-gray-100 desktopnav:order-1 desktopnav:mx-1 desktopnav:mt-0 desktopnav:w-auto" href="https://cloud.saleor.io/">Log in</a><a class="order-1 inline-flex w-full flex-shrink-0 items-center justify-center desktopnav:w-auto inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-10 px-3 text-sm font-semibold tracking-wide" href="https://cloud.saleor.io/signup">Sign up</a>
+               </div>
+               <div class="ml-auto mr-2 desktopnav:mr-0">
+                  <!--$-->
+                  <a target="_blank" title="Saleor has 19464 stars on GitHub" class="inline-flex gap-x-2" href="https://github.com/saleor/saleor">
+                     <span class="text-sm">
+                        <span class="sr-only">Saleor GitHub stars count: </span> <!-- -->19.5k
+                     </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19" class="h-5 w-5">
+                        <path fill="currentColor" d="M10.3 0A9.4 9.4 0 0 0 .9 9.4a9.4 9.4 0 0 0 6.4 9c.5 0 .7-.2.7-.5v-1.6c-2.7.6-3.2-1.2-3.2-1.2-.4-1.1-1-1.4-1-1.4-.9-.6 0-.6 0-.6 1 0 1.5 1 1.5 1 .8 1.4 2.1 1 2.7.8 0-.6.3-1 .6-1.3-2.1-.2-4.3-1-4.3-4.6 0-1 .4-2 1-2.6a3.4 3.4 0 0 1 0-2.5s.8-.2 2.6 1a8.9 8.9 0 0 1 4.7 0c1.8-1.2 2.6-1 2.6-1 .5 1.3.1 2.3 0 2.5.6.7 1 1.5 1 2.6 0 3.6-2.2 4.4-4.3 4.6.4.3.7.9.7 1.7V18c0 .3.1.6.6.5a9.4 9.4 0 0 0 6.4-9c0-5.2-4.2-9.4-9.3-9.4Z"></path>
+                     </svg>
+                  </a>
+                  <!--/$-->
+               </div>
+            </div>
+            <button type="button" aria-expanded="false" aria-label="Open mobile menu" class="relative z-50 -ml-4 block h-6 w-6 desktopnav:hidden" aria-controls="menu-list"><span aria-hidden="true" class="block h-0.5 origin-center rounded bg-gray-900 transition-transform"></span><span aria-hidden="true" class="my-1 block h-0.5 rounded bg-gray-900 transition-opacity"></span><span aria-hidden="true" class="block h-0.5 origin-center rounded bg-gray-900 transition-transform"></span></button>
+         </nav>
+      </header>
+      <main class="grid grid-cols-1 gap-y-8 pt-16 md:gap-y-16">
+         <section id="hero" class="relative mx-auto max-w-2xl px-4 pb-56 pt-12 text-center md:pb-72 md:pt-24">
+            <h2 class="text-balance font-heading text-3xl md:text-6xl">Multi-market commerce that scales</h2>
+            <p class="text-balance mt-4 text-base text-gray-900/60 md:text-xl">Launch new markets in days, streamline complex operations, and handle traffic spikes without breaking a sweat.</p>
+            <div class="mx-auto mt-10 grid w-full max-w-xs gap-4 md:mt-16 md:grid-cols-2"><a target="_blank" class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-gray-300 bg-white text-gray-900 shadow-sm hover:bg-gray-100  focus-visible:bg-gray-100 active:bg-gray-100 disabled:cursor-default disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-400 aria-disabled:cursor-default aria-disabled:border-gray-200 aria-disabled:bg-gray-50 aria-disabled:text-gray-400 h-12 px-4 text-base font-semibold tracking-wide" href="https://saleor.typeform.com/request-demo">Book a demo</a><a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://cloud.saleor.io/signup">Sign up</a></div>
+            <div aria-hidden="true" class="hidden before:absolute before:bottom-0 before:right-full before:mb-[0.5px] before:h-px before:w-full before:bg-gray-300/60 after:absolute after:bottom-0 after:left-full after:mb-[0.5px] after:h-px after:w-full after:bg-gray-200 md:block"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMin" viewBox="0 0 1440 747" aria-hidden="true" class="pointer-events-none absolute -bottom-12 left-1/2 -z-50 w-[1440px] -translate-x-1/2 md:bottom-0">
+               <path stroke="#D8DDE2" d="M509-114v646a8 8 0 0 0 8 8h176a8 8 0 0 1 8 8v155m230-898v727a8 8 0 0 1-8 8H747a8 8 0 0 0-8 8v153" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M609-114v646a8 8 0 0 0 8 8h76a8 8 0 0 1 8 8v135m130-878v727a8 8 0 0 1-8 8h-76a8 8 0 0 0-8 8v133" class="first-section-bg_svg__mobile-show" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M701 583v155a8 8 0 0 1-8 8H-32m771-163v155a8 8 0 0 0 8 8h710" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M701 583v105a8 8 0 0 1-8 8H-32m771-113v105a8 8 0 0 0 8 8h710" class="first-section-bg_svg__mobile-show" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M180-179.5V649a8 8 0 0 0 8 8h523" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M345-168v779a8 8 0 0 0 8 8h377" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M1261-234v883a8 8 0 0 1-8 8H703" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="#D8DDE2" d="M1095-231v842a8 8 0 0 1-8 8H743" class="first-section-bg_svg__mobile-hide" opacity="0.6"></path>
+               <path stroke="url(#first-section-bg_svg__a)" stroke-width="3" d="M1095 259v158" class="first-section-bg_svg__mobile-hide"></path>
+               <path stroke="url(#first-section-bg_svg__b)" stroke-width="3" d="M345 374v180" class="first-section-bg_svg__mobile-hide"></path>
+               <path stroke="url(#first-section-bg_svg__c)" stroke-width="3" d="M437 657h74" class="first-section-bg_svg__mobile-hide"></path>
+               <path stroke="url(#first-section-bg_svg__d)" stroke-width="3" d="M509 29v86" class="first-section-bg_svg__mobile-hide"></path>
+               <path stroke="url(#first-section-bg_svg__e)" stroke-width="3" d="M609 329v86" class="first-section-bg_svg__mobile-show"></path>
+               <g class="first-section-bg_svg__mobile-translate-y" filter="url(#first-section-bg_svg__f)">
+                  <rect width="82" height="82" x="679" y="597" fill="#161A1E" rx="5.47"></rect>
+                  <path fill="url(#first-section-bg_svg__g)" fill-rule="evenodd" d="M712.24 633 702 643.93h25.3L737.52 633h-25.3Z" clip-rule="evenodd"></path>
+                  <path fill="#fff" fill-opacity="0.8" fill-rule="evenodd" d="M712.24 633 702 643.93h25.3L737.52 633h-25.3Z" clip-rule="evenodd"></path>
+                  <rect width="86.1" height="86.1" x="676.95" y="594.95" stroke="#fff" stroke-width="4.1" rx="7.52"></rect>
+               </g>
+               <defs>
+                  <linearGradient id="first-section-bg_svg__a" x1="1095" x2="1158.45" y1="417" y2="290.21" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="0.1" stop-color="#A78CF2"></stop>
+                     <stop offset="0.5" stop-color="#C2BDFF"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="1" stop-color="#AD8CF2"></stop>
+                  </linearGradient>
+                  <linearGradient id="first-section-bg_svg__b" x1="345" x2="422.71" y1="554" y2="417.69" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="0.1" stop-color="#FFC700"></stop>
+                     <stop offset="0.5" stop-color="#FFE600"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="1" stop-color="#FFD600"></stop>
+                  </linearGradient>
+                  <linearGradient id="first-section-bg_svg__c" x1="511" x2="440.62" y1="657" y2="640.5" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="0.1" stop-color="#32C100"></stop>
+                     <stop offset="0.5" stop-color="#32C100"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="1" stop-color="#32C100"></stop>
+                  </linearGradient>
+                  <linearGradient id="first-section-bg_svg__d" x1="509" x2="530.88" y1="115" y2="34.67" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="0.1" stop-color="#0085FF"></stop>
+                     <stop offset="0.5" stop-color="#0085FF"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="1" stop-color="#0085FF"></stop>
+                  </linearGradient>
+                  <linearGradient id="first-section-bg_svg__e" x1="609" x2="630.88" y1="415" y2="334.67" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="0.1" stop-color="#0085FF"></stop>
+                     <stop offset="0.5" stop-color="#0085FF"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                     <stop offset="1" stop-color="#0085FF"></stop>
+                  </linearGradient>
+                  <linearGradient id="first-section-bg_svg__g" x1="737.53" x2="703.15" y1="637.3" y2="645.09" gradientUnits="userSpaceOnUse">
+                     <stop stop-color="#fff" stop-opacity="0.43"></stop>
+                     <stop offset="0.12" stop-color="#fff" stop-opacity="0.4"></stop>
+                     <stop offset="0.31" stop-color="#fff" stop-opacity="0.72"></stop>
+                     <stop offset="0.54" stop-color="#fff" stop-opacity="0.33"></stop>
+                     <stop offset="1" stop-color="#fff" stop-opacity="0.44"></stop>
+                  </linearGradient>
+                  <filter id="first-section-bg_svg__f" width="102.57" height="102.57" x="668.72" y="589.81" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                     <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                     <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                     <feOffset dy="3.09"></feOffset>
+                     <feGaussianBlur stdDeviation="3.09"></feGaussianBlur>
+                     <feComposite in2="hardAlpha" operator="out"></feComposite>
+                     <feColorMatrix values="0 0 0 0 0.0941176 0 0 0 0 0.160784 0 0 0 0 0.231373 0 0 0 0.26 0"></feColorMatrix>
+                     <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_3307_14692"></feBlend>
+                     <feBlend in="SourceGraphic" in2="effect1_dropShadow_3307_14692" result="shape"></feBlend>
+                  </filter>
+               </defs>
+            </svg>
+         </section>
+         <section id="attributes" class="mx-auto w-full max-w-7xl px-4">
+            <h2 class="sr-only">Attributes and technologies</h2>
+            <ul role="list" class="flex w-full flex-row flex-wrap items-center justify-center gap-4 xl:flex-nowrap xl:justify-between xl:gap-x-0">
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/headless">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="h-5 w-5 text-green">
+                           <path fill="currentColor" d="M4.167 2.5h1.666v1.667H4.167v4.166A1.667 1.667 0 0 1 2.5 10a1.667 1.667 0 0 1 1.667 1.667v4.166h1.666V17.5H4.167c-.892-.225-1.667-.75-1.667-1.667V12.5a1.666 1.666 0 0 0-1.667-1.667H0V9.167h.833A1.667 1.667 0 0 0 2.5 7.5V4.167A1.667 1.667 0 0 1 4.167 2.5m11.666 0A1.666 1.666 0 0 1 17.5 4.167V7.5a1.667 1.667 0 0 0 1.667 1.667H20v1.666h-.833A1.666 1.666 0 0 0 17.5 12.5v3.333a1.666 1.666 0 0 1-1.667 1.667h-1.666v-1.667h1.666v-4.166A1.666 1.666 0 0 1 17.5 10a1.667 1.667 0 0 1-1.667-1.667V4.167h-1.666V2.5zM10 12.5a.833.833 0 1 1 0 1.667.833.833 0 0 1 0-1.667m-3.333 0a.835.835 0 0 1 .589 1.423.833.833 0 1 1-.59-1.423Zm6.666 0a.833.833 0 1 1 0 1.667.833.833 0 0 1 0-1.667"></path>
+                        </svg>
+                     </span>
+                     <!-- -->Headless
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/graphql">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" class="h-5 w-5 text-blue">
+                           <path fill="currentColor" stroke="currentColor" stroke-width="0.208" d="m10.485 4.578.014.002.014-.002.297-.04 4.557 7.86a1.33 1.33 0 0 0-.34.565H5.97a1.33 1.33 0 0 0-.34-.566l4.557-7.86zm-1.49 12.339v.016a1.504 1.504 0 1 0 3.008 0v-.008L12 16.917l-.063-.397 3.45-2.045a1.504 1.504 0 0 0 2.582-1.05 1.51 1.51 0 0 0-1.05-1.445V7.89a1.517 1.517 0 0 0 1.224-1.49 1.504 1.504 0 0 0-1.504-1.504c-.459 0-.864.203-1.14.52l-3.539-2.03.041-.305v-.014a1.5 1.5 0 0 0-1.503-1.504c-.833 0-1.504.671-1.504 1.504h-.001l.001.014.041.305-3.538 2.03a1.507 1.507 0 0 0-2.645.984c0 .738.527 1.353 1.225 1.489v4.091a1.51 1.51 0 0 0-1.05 1.445 1.504 1.504 0 0 0 2.582 1.05l3.45 2.045zM5.87 6.4v-.008l-.012-.134 3.36-1.927-4.209 7.364-.022-3.918c.52-.24.883-.767.883-1.377Zm9.258-.008V6.4c0 .61.363 1.138.883 1.377l-.023 3.918-4.209-7.364 3.36 1.927zm-4.63 9.029c-.355 0-.69.123-.945.334L6.38 13.88h8.238l-3.174 1.876a1.48 1.48 0 0 0-.945-.334Z"></path>
+                        </svg>
+                     </span>
+                     <span class="sr-only sm:not-sr-only">Native </span>GraphQL
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/composable">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="h-5 w-5 text-purple">
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="m1.25 6.25 8.75-5m-8.75 5 8.75 5m-8.75 2.5 8.75 5m0-17.5 8.75 5m-8.75 5 8.75-5M10 18.75l8.75-5M1.25 10 10 15m0 0 8.75-5m-17.5 0 3.28-1.87m-3.28 5.62 3.28-1.88M18.74 10l-3.28-1.87m3.29 5.62-3.28-1.88"></path>
+                        </svg>
+                     </span>
+                     <!-- -->Composable
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/extensibility">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="h-5 w-5 text-orange">
+                           <path fill="currentColor" d="M9.6 1h-.02l-.22.04a4.83 4.83 0 0 0-2.69 1.28 4.36 4.36 0 0 0-1.45 3.45 4.46 4.46 0 0 0 1.43 3.16l.3.27-1.87 3.02c-.38-.02-.72.04-1 .16-.45.19-.79.49-1.01.9-.1.22-.17.45-.2.69a1.88 1.88 0 0 0 .78 1.8 2.35 2.35 0 0 0 1.55.36 2.11 2.11 0 0 0 1.39-.84c.17-.26.28-.55.32-.88.04-.32 0-.63-.12-.91a1 1 0 0 0-.16-.32l-.07-.13 2.64-4.3c.1-.14.15-.24.18-.32l-.22-.06a1.37 1.37 0 0 1-.3-.1 3.2 3.2 0 0 1-1.56-1.5 2.6 2.6 0 0 1-.2-1.67c.06-.35.19-.67.38-.97a3.04 3.04 0 0 1 2.53-1.37 2.86 2.86 0 0 1 2.17.9 2.8 2.8 0 0 1 .7 2.83l1.56.42.18.02c.21-.64.26-1.28.16-1.92a4.25 4.25 0 0 0-1.32-2.62 4.66 4.66 0 0 0-2.71-1.35L10.44 1zm.41 2.78a2.08 2.08 0 0 0-1.44.62c-.2.2-.35.43-.44.7a1.88 1.88 0 0 0 .85 2.3c.36.23.78.33 1.25.3l.12.17 2.5 4.28c.05.1.1.16.14.2.4-.38.84-.65 1.3-.8a3.09 3.09 0 0 1 2.77.51 2.78 2.78 0 0 1 .35 4.15c-.3.32-.67.57-1.08.73a3.07 3.07 0 0 1-3.2-.58l-.12-.13-.25.22-1.05 1.03a4.91 4.91 0 0 0 2.53 1.35l.5.09h.87l.63-.12a4.68 4.68 0 0 0 3.71-3.8 4.8 4.8 0 0 0-.6-3.05 4.8 4.8 0 0 0-3.84-2.28 5.24 5.24 0 0 0-1.6.15l-.38.12-1.82-3.07a1.87 1.87 0 0 0 .07-2.17 1.9 1.9 0 0 0-.99-.79 2.34 2.34 0 0 0-.78-.13M3.7 9.68c-.87.2-1.62.6-2.24 1.2a4.56 4.56 0 0 0-1.37 2.35l-.09.53v.83l.04.25c.03.2.06.34.1.45a4.62 4.62 0 0 0 1.5 2.42 4.93 4.93 0 0 0 4.27 1 4.54 4.54 0 0 0 3.63-3.68 1 1 0 0 1 .4-.01l2.8.04c.21 0 .36.01.45.03a2.03 2.03 0 0 0 1.27 1.05c.26.07.52.1.79.09.42-.05.8-.2 1.12-.45a1.87 1.87 0 0 0 .68-1.95 1.81 1.81 0 0 0-.3-.67 2.06 2.06 0 0 0-2.5-.7c-.43.18-.75.46-.97.83l-.07.14c-.2 0-.52 0-.94-.02l-2.53-.03-.96-.02-1.12-.02.07.38a2.6 2.6 0 0 1-.3 1.81 2.85 2.85 0 0 1-2.17 1.5 2.8 2.8 0 0 1-1.56-.16 2.8 2.8 0 0 1-1.28-.96 2.66 2.66 0 0 1-.6-1.76 2.81 2.81 0 0 1 1.23-2.27c.28-.2.59-.33.91-.42l.2-.07-.46-1.7Z"></path>
+                        </svg>
+                     </span>
+                     <!-- -->Extensible
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/saas-self-host">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" class="h-5 w-5 text-green">
+                           <g fill="currentColor">
+                              <path d="M14.79 8.34H6.2a.18.18 0 0 0-.17.18v8.97a.18.18 0 0 0 .17.18h8.57a.18.18 0 0 0 .18-.18V8.52a.18.18 0 0 0-.18-.18ZM7.46 9.77h6.08v2.6H7.46zm6.08 6.47H7.46v-2.61h6.08z"></path>
+                              <path d="M8.54 15.08a.71.71 0 0 0 .7.71.71.71 0 0 0 .51-1.21.71.71 0 0 0-1 0 .71.71 0 0 0-.21.5m0-3.97a.71.71 0 0 0 .7.71.71.71 0 0 0 .72-.71.71.71 0 1 0-1.43 0Z"></path>
+                              <path d="M17.18 6.62A7.15 7.15 0 0 0 10.5 2a7.14 7.14 0 0 0-6.67 4.62A4.47 4.47 0 0 0 .5 10.96a4.49 4.49 0 0 0 4.1 4.43.18.18 0 0 0 .2-.18v-1.34a.18.18 0 0 0-.16-.18 2.78 2.78 0 0 1-1.61-.77 2.75 2.75 0 0 1-.83-1.98c0-.62.2-1.21.58-1.7a2.78 2.78 0 0 1 1.48-.98l.84-.22.31-.82c.2-.51.46-.99.8-1.42a5.5 5.5 0 0 1 1.17-1.12 5.4 5.4 0 0 1 3.12-.98 5.39 5.39 0 0 1 3.13.99A5.44 5.44 0 0 1 14.8 5.8a5.38 5.38 0 0 1 .8 1.42l.3.82.85.22a2.77 2.77 0 0 1 1.22 4.66 2.78 2.78 0 0 1-1.6.77.18.18 0 0 0-.16.17v1.35a.18.18 0 0 0 .2.18 4.5 4.5 0 0 0 4.09-4.42 4.47 4.47 0 0 0-3.32-4.35"></path>
+                           </g>
+                        </svg>
+                     </span>
+                     <!-- -->SaaS 
+                     <span class="sr-only sm:not-sr-only">
+                        <!-- -->�&nbsp;<!-- -->&amp; On-Prem
+                     </span>
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/scalable">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" class="h-5 w-5 text-blue">
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M13 2.5h5v5m-4.582 4.583h-5v-5M18.001 2.5l-9.583 9.583"></path>
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M9.667 2.5H3.833A.833.833 0 0 0 3 3.333v13.334c0 .46.373.833.833.833h13.334a.833.833 0 0 0 .833-.833v-5.834"></path>
+                        </svg>
+                     </span>
+                     <!-- -->Scalable
+                  </a>
+               </li>
+               <li class="w-[calc(50%-0.5rem)] sm:w-auto">
+                  <a class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/open-source">
+                     <span class="mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="h-5 w-5 text-purple">
+                           <path fill="currentColor" fill-rule="evenodd" d="M2.5 5a2.5 2.5 0 0 0 4.858.833H7.5a1.667 1.667 0 0 1 1.667 1.666v5a3.333 3.333 0 0 0 3.333 3.334h.142a2.5 2.5 0 1 0 0-1.667H12.5a1.667 1.667 0 0 1-1.667-1.667v-5a3.317 3.317 0 0 0-.446-1.666h2.255a2.501 2.501 0 0 0 2.781 1.631 2.501 2.501 0 0 0 1.49-4.077 2.501 2.501 0 0 0-4.27.779H7.356a2.5 2.5 0 0 0-4.857.833Zm11.667 10a.834.834 0 0 1 .833-.834.833.833 0 1 1-.833.833Zm0-10A.834.834 0 0 1 15 4.165a.834.834 0 0 1 .59 1.422A.834.834 0 0 1 14.166 5Zm-10 0a.833.833 0 1 1 1.666 0 .833.833 0 0 1-1.666 0" clip-rule="evenodd"></path>
+                        </svg>
+                     </span>
+                     <!-- -->Open Source
+                  </a>
+               </li>
+            </ul>
+         </section>
+         <section id="clients" class="mx-auto w-full max-w-7xl px-4">
+            <h2 class="mb-6 text-center font-sans text-base text-gray-600">Trusted by global brands</h2>
+            <ul role="list" class="flex flex-row flex-wrap items-center justify-center gap-x-6 gap-y-8 text-gray-600 xl:flex-nowrap xl:justify-between xl:gap-x-8">
+               <li aria-label="Heineken">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="182" height="32" fill="none">
+                     <g fill="currentColor">
+                        <path d="m18 0 3.6 11.2h.1L18.1 0zm16 12.7v.1l-9.6 7L28 31v.1h.1l-3.6-11.3 9.6-7ZM17.2 25.1l-9.6 6.8.1.1 9.5-7Zm54.4-8.2c0 1-.5 1.4-2.2 2l-2.8.8c-.6 0-.9-.5-.9-1.4 0-2.1.6-4.8 3-4.8 2 0 2.9 2.3 2.9 3.4m-22.8 9.4-.1-.3c-.3-.3-1.1-.4-1.6-.9-.3-.3-.5-.8-.5-2.1v-5c0-.3 0-.6.5-.6h5c.4 0 .5.3.5.6v5c0 1.3-.3 1.8-.6 2.1-.4.5-1.3.6-1.5.9l-.1.3c0 .8 0 1.6.2 1.7l.7.1h8.2l.7-.1.2-1.7-.1-.3c-.2-.2-1.1-.4-1.6-.9-.3-.3-.5-.9-.5-1.9V9.6c0-.7.2-1.2.5-1.5.4-.4 1.4-.5 1.6-.7V7l-.1-1.5-.7-.1h-8l-.5.1v1.9c.2.1 1 .3 1.2.6.3.4.5.7.5 1.7v3.9c0 .1-.2.3-.4.3H47c-.2 0-.3-.2-.3-.3V9.7c0-1 .1-1.3.4-1.7.3-.3 1-.5 1.2-.6V7a4 4 0 0 0 0-1.5l-.6-.1h-8l-.6.1-.2 1.5v.4c.3.2 1.2.3 1.7.7.2.3.4.8.4 1.5v13.6c0 1-.2 1.6-.5 2-.4.4-1.3.6-1.5.8l-.1.3c0 .8 0 1.6.2 1.7l.7.1H48l.6-.1c.2-.1.3-.9.3-1.7Zm27.1-.4c.9-.8 1.1-1.3 1.1-1.7 0-.5-.1-.8-.5-1.2-.4-.3-.7-.4-1-.4-.4 0-.5.1-.8.4-1.3 1.3-3 2-5 2s-3.2-1.4-3.2-2.2c0-.3.2-.5.7-.6 5.6-1.8 8-3 8.9-3.8.5-.5.7-1 .7-1.5 0-2.3-3.3-6.2-8.2-6.2a8 8 0 0 0-5.7 2.4 9.1 9.1 0 0 0-2.5 6.7c0 2.9 1 4.8 2.5 6.4a8.8 8.8 0 0 0 6.3 2.4c2.6 0 5-1 6.7-2.7m9.2-14.2c0-.4-.2-.5-.5-.5h-6.2l-.2 1.5a.6.6 0 0 0 0 .4l1.1.6c.3.3.4.9.4 1.7v7.8c0 1-.1 1.7-.4 2l-1.4.8v.4c0 .7 0 1.5.2 1.6l.5.1h7.5l.6-.1.2-1.6-.1-.4c-.2-.2-.9-.4-1.3-.9-.3-.2-.4-.9-.4-1.9zM82 4.3a3 3 0 0 0-3 2.9c0 1.6 1.4 2.8 3 2.8s3-1.2 3-2.8a3 3 0 0 0-3-2.9m22.6 11.4c0-3.3-1.7-5-4.3-5-1.3 0-2.6.5-4 1.3l-.7.4c-.5 0-.2-1.2-1-1.2h-5.7l-.2 1.5v.4c.3.2.8.3 1.1.6.3.3.4.9.4 1.7v7.8c0 1-.1 1.7-.4 2-.4.4-1.1.6-1.3.8l-.1.4c0 .7 0 1.5.2 1.6l.6.1h7.4l.5-.1c.2-.2.3-.9.3-1.6l-.1-.4c-.2-.2-1-.4-1.3-.9-.3-.2-.5-.9-.5-1.9v-5.7c0-2.4 1.4-3.1 2.3-3.1 1 0 1.6.7 1.6 2.2v8.1c0 2.2 1.3 3.6 3.8 3.6 2.8 0 4-2 4-2.4 0-.3-.6-1-1-1s-1 .5-1.2.5c-.3 0-.4-.1-.4-.6zm54.2 10.2c.9-.8 1-1.3 1-1.7 0-.5 0-.8-.4-1.2-.4-.3-.7-.4-1-.4-.4 0-.6.1-.8.4-1.3 1.3-3 2-5 2s-3.2-1.4-3.2-2.2c0-.3.2-.5.7-.6 5.6-1.8 8-3 8.8-3.8.5-.5.7-1 .7-1.5 0-2.3-3.2-6.2-8.1-6.2a8 8 0 0 0-5.7 2.4 9.1 9.1 0 0 0-2.5 6.7c0 2.9.9 4.8 2.5 6.4a8.8 8.8 0 0 0 6.3 2.4c2.6 0 5-1 6.7-2.7m-4.3-9c0 1-.5 1.4-2.3 2-1.4.5-2.4.8-2.8.8-.6 0-.8-.5-.8-1.4 0-2.1.6-4.8 2.9-4.8 2 0 3 2.3 3 3.4m-31.6 9c.8-.8 1-1.3 1-1.7 0-.5 0-.8-.4-1.2-.4-.3-.7-.4-1-.4-.4 0-.6.1-.9.4a6.6 6.6 0 0 1-4.9 2c-2 0-3.3-1.4-3.3-2.2 0-.3.2-.5.8-.6 5.6-1.8 8-3 8.8-3.8.5-.5.7-1 .7-1.5 0-2.3-3.2-6.2-8.2-6.2a8 8 0 0 0-5.6 2.4 9.1 9.1 0 0 0-2.5 6.7c0 2.9.9 4.8 2.4 6.4a8.8 8.8 0 0 0 6.4 2.4c2.5 0 5-1 6.7-2.7m-4.4-9c0 1-.4 1.4-2.2 2l-2.8.8c-.6 0-.9-.5-.9-1.4 0-2.1.7-4.8 3-4.8 2 0 3 2.3 3 3.4Zm58.6-1.2c0-3.3-1.7-5-4.4-5-1.3 0-2.6.5-4 1.3l-.7.4c-.4 0-.1-1.2-1-1.2h-5.6c-.2.2-.3 1-.3 1.5l.1.4c.2.2.7.3 1 .6.3.3.4.9.4 1.7v7.8c0 1 0 1.7-.4 2-.4.4-1 .6-1.3.8v.4l.1 1.6.6.1h7.4l.5-.1c.2-.2.3-.9.3-1.6V26c-.3-.2-1-.4-1.4-.9-.3-.2-.4-.9-.4-1.9v-5.7c0-2.4 1.3-3.1 2.3-3.1 1 0 1.5.7 1.5 2.2v8.1c0 2.2 1.4 3.6 3.9 3.6 2.7 0 3.9-2 3.9-2.4 0-.3-.6-1-1-1-.3 0-1 .5-1.2.5-.2 0-.3-.1-.3-.6zM131 4.9h-5.6l-.5.1c-.2.1-.3.9-.3 1.4l.1.4 1.4.7c.3.3.4 1 .4 3.1v11.7c0 2-.2 2.6-.4 2.8-.4.5-1.1.7-1.3.9l-.1.4c0 .7 0 1.5.2 1.6l.6.1h7.3l.6-.1c.1-.1.3-.9.3-1.6 0-.2 0-.3-.2-.4-.2-.2-.9-.4-1.2-.9-.4-.2-.5-.9-.5-1.9v-.7c0-.3.1-.5.8-1.1.3-.3.5-.5.7-.5.3 0 .6.2 3.8 6.7.2.4.3.5.8.5h4.8l.5-.1c.1-.1.3-.9.3-1.6l-.1-.4c-.2-.2-1.5-.4-1.7-.9a34.5 34.5 0 0 1-4.4-7.8c0-.4 1.9-2.2 3.4-3.5 1-.8 1.7-.2 1.7-1.2s-.2-1.4-.4-1.4h-7c-.7 0-.7.3-.7 1.6 0 .5 1.2.5 1.2 1.1 0 .6-3 3.4-3.5 3.4-.2 0-.2 0-.2-.6v-11c0-.5-.3-.8-.7-.8Z"></path>
+                        <path d="m17.1.3 4 11.8h12.4l-10 7.4 3.7 11.8-10-7.3L7 31.3l3.8-11.8L.9 12h12.4L17 .3Zm160 4c.5 0 1 0 1.4.3.4.3.8.6 1 1a2.9 2.9 0 0 1 0 3 2.7 2.7 0 0 1-1 1 2.9 2.9 0 0 1-2.9 0 2.7 2.7 0 0 1-1-1 2.9 2.9 0 0 1-.4-1.5 2.9 2.9 0 0 1 1.5-2.5 3 3 0 0 1 1.4-.4Zm0 .5a2.3 2.3 0 0 0-1.2.3 2.2 2.2 0 0 0-.8.8 2.3 2.3 0 0 0 0 2.4l.8.8a2.3 2.3 0 0 0 2.3 0c.4-.2.7-.5.9-.8a2.3 2.3 0 0 0 .3-1.2l-.3-1.2a2.1 2.1 0 0 0-.9-.8 2.3 2.3 0 0 0-1.1-.3m-1.3 3.8v-3h.6a30.8 30.8 0 0 1 1.4.1c.2 0 .3.2.3.3l.1.5c0 .2 0 .4-.2.5a1 1 0 0 1-.6.3.7.7 0 0 1 .2.1s.2.1.2.3l.3.3.3.6h-.7l-.3-.5a2 2 0 0 0-.4-.6.7.7 0 0 0-.4-.1h-.2v1.2zm.6-1.7h.9a.4.4 0 0 0 .2-.2.4.4 0 0 0 0-.4.4.4 0 0 0-.2-.2h-.9z"></path>
+                     </g>
+                  </svg>
+               </li>
+               <li aria-label="Lush">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="98" height="28" fill="none" preserveAspectRatio="xMidYMin">
+                     <path fill="currentColor" fill-rule="evenodd" d="M0 1.6v24.8h18.8v-6.3h-11V1.6m36.8 15.2c0 7-3.8 10.2-11.4 10.2-7.6 0-11.4-3.3-11.4-10.2V1.6h7.7V15c0 2.5 0 5.7 3.7 5.7s3.7-3.2 3.7-5.7V1.6h7.7zm11.6 1.3a4.5 4.5 0 0 0 .3 1.6c.5 1.5 2.2 1.8 3.7 1.8 1.2 0 3.1-.4 3.1-2.2 0-1.3-1-1.7-5.3-2.9-4-1.1-8.5-2.2-8.5-7.2 0-5.7 5-8.2 10-8.2C65 1 69.9 3 70 9h-7.3a2 2 0 0 0-.9-1.9 4 4 0 0 0-2.3-.6c-1 0-2.7.3-2.7 1.6.1 1.8 3.7 2.2 7.2 3.2s7 2.6 7 7.2c0 6.4-6 8.5-11.5 8.5-2.8 0-11-1-11-9h7.7Zm34-16.5v8.6H83V1.6h-7.6v24.8H83v-9.8h7.3v9.8h7.6V1.6" clip-rule="evenodd"></path>
+                  </svg>
+               </li>
+               <li aria-label="Rough Trade">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="46" fill="none">
+                     <path fill="currentColor" d="M1.71 2.37c1.3-.19 2.58-.43 3.88-.55.86-.08 1.73 0 2.59.04 2.2.1 3.84 1.53 4.1 3.73.16 1.22.16 2.48.07 3.7a3.62 3.62 0 0 1-1.54 2.78c1.23.98 1.32 2.32 1.4 3.68.05 1.24.07 2.47.18 3.7.05.47.23.95.47 1.36.29.52.07.87-.36.92-.95.1-1.94.22-2.86.05-.87-.16-1.09-1.05-1.15-1.86-.12-1.5-.27-3.01-.28-4.52 0-1.3-.72-1.9-2.25-1.48v4.1c0 .64.03 1.3-.03 1.94-.07.63.34 1.48-.46 1.82-.94.4-2.02.35-2.86-.23-.36-.25-.53-.97-.55-1.49-.12-3.04-.17-6.09-.25-9.13 0-.32-.06-.64-.1-.95v-7.6Zm3.88 5.3h.02V8.7c-.02 1.56-.3 1.85 1.67 1.6.96-.13 1.24-.31 1.24-1.31 0-1.04-.11-2.09-.25-3.12-.04-.25-.34-.55-.6-.66-.36-.14-.78-.14-1.18-.19-.65-.08-.95.19-.9.86.03.59 0 1.18 0 1.77ZM57.68.91c.92.35 1.09 1.06 1.21 2 .74 5.63.39 11.3.86 16.94a4.66 4.66 0 0 1 0 .89c-.07.58-.35.94-1.01.88-.46-.05-.92-.03-1.38-.04-1.15-.04-1.4-.31-1.46-1.45-.09-2.05-.16-4.1-.3-6.14-.03-.4-.27-1.06-.53-1.13a3.65 3.65 0 0 0-1.7.15c-.12.03-.21.5-.2.75.1 1.92.24 3.84.36 5.75.02.35-.03.7-.04 1.05-.02.63-.3.93-.97.89a14.21 14.21 0 0 0-1.78 0c-.75.04-1.14-.31-1.12-1.04.06-1.66.17-3.31.25-4.97.02-.4.07-.83-.02-1.21-.3-1.19.19-2.12.85-3l.17-.23-.15-.14-.97 1.2c-.1-.47-.21-.77-.21-1.08 0-.07.35-.14.7-.27 0-.58.05-1.3-.03-2-.03-.22-.42-.4-.63-.6-.21-.2-.54-.39-.58-.62a33.55 33.55 0 0 1-.25-3.04c-.03-.78.03-1.57.02-2.35 0-.63.18-.97.9-.85.43.06.87 0 1.3 0 1.12-.05 1.45.18 1.53 1.33.1 1.45.1 2.9.16 4.36.02.6.09 1.18.14 1.77.04.44.24.7.72.66.3-.02.6 0 .89 0 .7.03.96-.35.92-1a80.82 80.82 0 0 1-.12-2.51c-.04-1.26-.11-2.53-.06-3.79.01-.4.38-.78.59-1.17h1.94Zm-.81 44.16c-.36-.34-.77-.64-1.07-1.02a5.33 5.33 0 0 0-3.38-1.88c-1-.19-1.13-.66-1.16-1.5-.13-3.94-.31-7.87-.47-11.8a51.93 51.93 0 0 1-.04-2.02c0-1.82.13-1.98 1.92-2.11a251.88 251.88 0 0 1 5.14-.35c1.2-.06 1.66.34 1.81 1.55.25 1.98.18 2.06-1.77 2.06h-2.98c0 1.39-.02 2.7.02 4 0 .12.35.31.54.3.9-.02 1.8-.12 2.72-.15.83-.03 1.11.3 1.13 1.14.01.56.14 1.12.15 1.69.04 1.01-.21 1.26-1.21 1.22-1-.04-1.99-.11-3.08-.17 0 1.57-.03 3.1.04 4.61.01.2.54.53.84.54 1.02.04 2.04-.05 3.07-.08.7-.02 1.42 0 1.82.74v3.23zm-37.45-8.6c0 1.52-.02 3 .01 4.48.02.66-.13 1.2-.7 1.6-.64.43-1.26.92-1.94 1.3-.64.35-1.03.14-1.07-.62-.08-1.42-.08-2.85-.1-4.27-.04-2.02-.1-4.04-.11-6.05-.03-2.31-.05-4.62-.03-6.93 0-1 .54-1.55 1.54-1.55 1.36-.01 2.72.08 4.08.1.59.02 1.2-.1 1.76 0 1.4.24 2.69 1.6 2.93 3 .18.98.6 2 .44 2.91-.21 1.29-.11 2.8-1.38 3.72-.44.32-.4.66-.13 1.03.94 1.3.94 2.84 1 4.34.04 1.36-.16 2.72.5 4.02.34.68-.02 1.15-.8 1.2-.79.03-1.58.09-2.34-.02a1.3 1.3 0 0 1-.88-.75 12.8 12.8 0 0 1-.48-2.6c-.1-1-.1-2-.11-3-.03-1.75-.23-1.94-2.19-1.92Zm-.04-8.73c0 1.23.04 2.36-.02 3.48-.08 1.7-.12 1.7 1.6 1.73.75.01 1.06-.28 1.05-1.04 0-.77-.07-1.55-.03-2.32.08-1.72-.02-1.85-1.72-1.85h-.89Zm22.79 16.83c-.67 0-1.35-.03-2.02 0-.7.04-1.08-.3-1.2-.94a19.5 19.5 0 0 1-.29-2.4c-.15-3.17-.26-6.34-.4-9.52-.04-1-.16-1.98-.18-2.98-.02-1.04.25-1.45 1.25-1.67 1.2-.26 2.09-.79 2.43-2.05.05-.22.35-.5.55-.52.95-.09 1.99-.33 2.84-.06.84.27 1.7.95 2.18 1.7a7.74 7.74 0 0 1 1.36 5.27c-.12 1.1-.05 2.2-.04 3.3.03 1.9.15 3.77.12 5.65a4.26 4.26 0 0 1-3.62 4.07c-.98.14-1.98.15-2.98.22v-.08Zm2.8-9.71h-.13v-.4c-.08-1.8-.1-3.61-.25-5.4-.08-1.15-1.04-1.76-2.13-1.44-.18.05-.4.35-.4.54 0 .76.11 1.53.14 2.3.1 3.25.16 6.5.26 9.76 0 .26.17.75.3.75.57.05 1.2.08 1.72-.12.26-.1.46-.7.47-1.07.04-1.64.01-3.28.01-4.92ZM34 39.56c-.64 0-1.22-.02-1.8 0-.75.04-.76.67-.84 1.18-.15.9-.22 1.81-.34 2.72-.08.56-.38.84-.99.8-.6-.04-1.24 0-1.86-.02-.71-.01-1.1-.41-1-1.13.33-2.53.68-5.07 1.08-7.59.33-2.05.74-4.09 1.13-6.13.27-1.4.52-2.8.88-4.18.17-.67.6-1.2 1.46-1.12.43.04.86.02 1.29.03 1.2.05 1.6.32 1.85 1.47.46 2.09.86 4.19 1.32 6.27.36 1.67.82 3.32 1.15 5 .36 1.79.62 3.6.94 5.4.04.24.1.47.18.7.18.55-.1.94-.56 1.08-.55.15-1.16.14-1.74.2-.88.12-1.29-.4-1.46-1.15-.24-1.13-.45-2.27-.69-3.53m-1.3-6.24-.26-.01c-.04.72-.13 1.44-.12 2.16 0 .23.26.45.4.68.13-.24.4-.5.38-.72-.07-.71-.26-1.41-.4-2.11M14.5 9c.03-1.9.19-3.67 1.12-5.26 1.08-1.86 3-2.6 5.39-2.06a4.5 4.5 0 0 1 3.53 4c.21 1.52-.04 2.92-.35 4.37-.17.8.08 1.68.13 2.52.02.37 0 .74.01 1.1.03.54.05 1.08.11 1.62.02.14.16.27.22.42.67 1.8-.68 4.8-2.47 5.47-1.86.7-3.68.75-5.37-.5a4.27 4.27 0 0 1-1.86-3.4c-.12-2.8-.3-5.6-.46-8.28m3.81 2.48h.23v5.74c0 .83.61 1.5 1.36 1.52.65.01 1.16-.52 1.22-1.34.07-1.01.16-2.03.13-3.04a347.61 347.61 0 0 0-.35-7.9c-.02-.48-.09-1-.3-1.4a1.32 1.32 0 0 0-.92-.6c-1.03-.1-1.39.33-1.38 1.46.02 1.86 0 3.7 0 5.56Zm27.38 8.86c-1.1 1.45-2.6 1.12-3.98 1.07-2.1-.08-3.69-1.65-3.9-3.93-.26-2.63-.4-5.27-.52-7.9-.07-1.55 0-3.11 0-4.67 0-.18.09-.37.14-.55.46-1.53.73-1.69 2.3-1.37.27.05.54.09.8.16 1.26.37 2.3.03 3.24-.87.8-.76 1.23-.69 1.9.18l.14.19c1.48 1.3 1.62 3.04 1.41 4.81a3.14 3.14 0 0 1-.85 1.57c-.13.15-.73-.13-1.09-.3-.87.31-1.54-.05-1.63-1.04-.06-.67-.05-1.35-.12-2.02-.09-.88-.71-1.47-1.43-1.42-.64.06-1.3.87-1.27 1.64l.42 7.35.2 3.46c.06 1 .5 1.55 1.27 1.57 1.09.02 1.36-.32 1.48-1.56.1-1.07-.05-2.15-.02-3.23 0-.26.26-.7.46-.73a13.6 13.6 0 0 1 2.24-.18c.15 0 .4.2.44.37.24.78.54 1.57.61 2.37.14 1.61.13 3.23.2 4.85.03.54.05 1.05-.63 1.18-.61.11-1.17.04-1.55-.55zm-18.8-6.89-.69-.23.8-1.27h-.63c-.22-3-.7-5.95-.52-8.94l.27-.13c.28.22.59.41.82.67.75.85 1.07 2.06 2.15 2.66.13.07.2.32.22.5.25 1.81.46 3.61-.06 5.44-.18.66.01 1.44.09 2.16.08.82.21 1.63.34 2.44.1.72.2 1.45.91 1.89.79.48 1.6.14 1.73-.77.17-1.17.43-2.35.44-3.52.01-1.26-.27-2.52-.33-3.78-.13-2.47-.2-4.95-.27-7.43-.01-.23-.05-.54.08-.7a.98.98 0 0 1 .71-.31c.16 0 .39.34.4.54.12 1.17.17 2.35.26 3.52.02.2.14.4.23.58.16.33.42.65.49 1 .18.94.5 1.8 1.1 2.54.16.2.24.43.24.67-.02.98-.1 1.97-.14 2.95-.02.48 0 .97.02 1.46.05 1.23.24 2.48.11 3.7a2.89 2.89 0 0 1-2 2.45c-2.04.68-4.08.7-5.91-.68-.74-.56-1.27-1.22-1.1-2.25.13-.86.17-1.73.25-2.6.05-.53.31-1.08-.24-1.57-.1-.1.13-.56.24-.98ZM10.58 28.1c0 1.24-.02 2.4 0 3.54.04 1.89.12 3.77.13 5.66 0 .88-.14 1.76-.13 2.65.03 1.2.18 2.4.21 3.6.03 1.06-.33 1.37-1.42 1.32-.43-.01-.86-.07-1.29-.1-1.08-.08-1.14-.13-1.16-1.18l-.17-9.61a304.42 304.42 0 0 1-.04-5.24c0-.54-.17-.75-.75-.73-.88.02-1.77-.08-2.66-.12-.58-.03-.83-.27-.82-.9.04-2.44.02-2.44 2.44-2.44h5.25a1567 1567 0 0 0 3.56 0c.63 0 .94.28.94.93 0 .48.1.96.16 1.44.1.7-.24 1.15-.96 1.17-1.07.03-2.14 0-3.29 0Z"></path>
+                  </svg>
+               </li>
+               <li aria-label="Unicef">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="26" fill="none">
+                     <path fill="currentColor" d="M12.36 17.86V7.64h3.4V25.1h-3.33v-3.03h-.19a5.36 5.36 0 0 1-1.93 2.33 5.6 5.6 0 0 1-3.28.93 5.2 5.2 0 0 1-5-2.96 8.1 8.1 0 0 1-.73-3.63V7.65h3.4v10.7a4 4 0 0 0 .99 2.84c.66.7 1.51 1.05 2.56 1.05a4.18 4.18 0 0 0 3.48-1.92c.43-.64.63-1.46.63-2.45Zm11.69-3.13V25.1h-3.4V7.64h3.26v2.84h.22a4.99 4.99 0 0 1 1.89-2.22 5.87 5.87 0 0 1 3.26-.84 6.3 6.3 0 0 1 3.12.75c.9.49 1.59 1.22 2.08 2.2.5.98.74 2.19.74 3.63v11.1h-3.4V14.4a4.2 4.2 0 0 0-.99-2.96 3.5 3.5 0 0 0-2.71-1.08 3.74 3.74 0 0 0-3.55 2 4.95 4.95 0 0 0-.52 2.37M40.1 25.1V7.64h3.4V25.1zm1.7-20.15a2.16 2.16 0 0 1-1.52-.6 1.9 1.9 0 0 1-.63-1.42c0-.56.21-1.04.63-1.44a2.14 2.14 0 0 1 1.52-.6c.6 0 1.1.2 1.51.6.43.4.64.88.64 1.44a1.9 1.9 0 0 1-.64 1.43 2.12 2.12 0 0 1-1.5.59Zm13.93 20.5a8.04 8.04 0 0 1-4.37-1.15 7.6 7.6 0 0 1-2.8-3.2 10.64 10.64 0 0 1-.97-4.65c0-1.77.34-3.34 1-4.7a7.66 7.66 0 0 1 2.82-3.19 7.86 7.86 0 0 1 4.28-1.14c1.33 0 2.51.24 3.55.73a6.18 6.18 0 0 1 3.66 5.13h-3.3a3.97 3.97 0 0 0-1.26-2.11c-.64-.6-1.5-.9-2.59-.9-.95 0-1.78.26-2.49.76-.7.5-1.25 1.2-1.65 2.11a8.17 8.17 0 0 0-.59 3.23c0 1.27.2 2.37.58 3.3.39.92.93 1.64 1.64 2.14a4.2 4.2 0 0 0 2.51.76 4.23 4.23 0 0 0 1.75-.35 3.58 3.58 0 0 0 1.33-1.03c.36-.45.62-.99.76-1.62h3.3a6.33 6.33 0 0 1-3.57 5.11 8 8 0 0 1-3.6.77Zm18.64 0a8.6 8.6 0 0 1-4.44-1.1 7.48 7.48 0 0 1-2.86-3.13c-.67-1.35-1-2.92-1-4.74 0-1.78.33-3.36 1-4.72a7.77 7.77 0 0 1 2.82-3.2A8.57 8.57 0 0 1 77 7.9a6.94 6.94 0 0 1 2.49 1.54c.73.7 1.31 1.6 1.74 2.71.42 1.11.63 2.45.63 4.04v1.2H68v-2.54h10.54a5 5 0 0 0-.54-2.38 4.12 4.12 0 0 0-1.54-1.64c-.65-.4-1.41-.6-2.3-.6-.95 0-1.78.23-2.5.7a4.73 4.73 0 0 0-1.63 1.82 5.25 5.25 0 0 0-.57 2.42v1.99c0 1.16.2 2.15.62 2.97a4.47 4.47 0 0 0 4.34 2.51c.64 0 1.23-.09 1.76-.27a3.66 3.66 0 0 0 2.26-2.22l3.22.58a5.82 5.82 0 0 1-1.39 2.5 6.72 6.72 0 0 1-2.49 1.64 9.3 9.3 0 0 1-3.4.58Zm19.89-17.8v2.72H84.4V7.64h9.86ZM87.11 25.1V5.62c0-1.09.24-2 .72-2.72a4.39 4.39 0 0 1 1.9-1.62 6.05 6.05 0 0 1 2.56-.55 7.81 7.81 0 0 1 2.83.47l-.8 2.75-.6-.16a3.5 3.5 0 0 0-.92-.1c-.82 0-1.41.2-1.77.61-.35.41-.52 1-.52 1.78V25.1z"></path>
+                  </svg>
+               </li>
+               <li aria-label="Breitling">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="139" height="64" fill="none">
+                     <path fill="currentColor" d="M131.23 30.56c-4.91 0-8.05 2.86-8.05 7.72 0 4.73 3.43 7.33 8.05 7.33 5 0 7.1-1.92 7.1-2.07v-6.47h-6.88v2.36h4.3v2.87c-1.43 1.03-4.52.85-4.52.85-2.84 0-5.47-1.22-5.47-4.87 0-3.23 2.36-5.25 5.47-5.25 2.27 0 3.89.6 4.77 1.14l1.06-2.27a11.83 11.83 0 0 0-5.83-1.34M.7 30.82v14.6h9.2c3.96 0 4.86-2.17 4.86-4.47 0-1.16-.62-2.62-2.1-3.23.98-.72 1.29-1.64 1.29-2.83 0-2.94-1.59-4.08-5-4.08H.69Zm115.44 0v9.95l-8.68-9.68-.23-.25h-2.03v14.6h2.58V35.32l9.08 10.1h1.86V30.83zm-78.36.01v14.59H50.1v-2.46h-9.74v-3.64h7.06v-2.35h-7.06v-3.68h9.73v-2.46h-12.3Zm24.4 0v2.46h5.44v12.14h2.58V33.3h5.45v-2.46H62.17Zm-7.34 0v14.59h2.58V30.83zm-35.31 0v14.61h2.57v-6.02h3.83l3.76 6h3.04l-3.9-6c2.18-.17 4.03-1.5 4.03-4.32 0-3.5-2.72-4.27-5.25-4.27zm61.06 0v14.61h11.37v-2.46h-8.8V30.83zm15.55 0v14.61h2.58V30.83zm-92.92 2.3h5.65c1.56 0 2.56.62 2.56 1.83 0 .72-.22 1.97-1.99 1.97H3.21v-3.8Zm18.88.07h5.53c.98 0 2.66.25 2.66 2.1 0 1.56-1.52 1.77-2.67 1.77H22.1zM3.21 39.22h6.35c1.39 0 2.58.3 2.58 1.96 0 1.64-1.4 1.93-2.23 1.93H3.2v-3.88Zm57.33 13.31c-1.78 0-3.12.45-3.88 1.3a2.68 2.68 0 0 0 .21 3.75l.23.21-.25.18a2.9 2.9 0 0 0-1.2 2.68c.13 1.5 1.48 3.1 4.87 3.1h.01c3.4 0 4.74-1.6 4.87-3.1a2.92 2.92 0 0 0-1.19-2.68l-.24-.17.22-.2a2.7 2.7 0 0 0 .22-3.77c-.76-.85-2.1-1.3-3.88-1.3Zm11.25 0c-1.78 0-3.11.45-3.88 1.3a2.57 2.57 0 0 0-.64 2.04c.04.46.23 1.12.86 1.71l.22.21-.24.18a2.9 2.9 0 0 0-1.2 2.68c.13 1.5 1.48 3.1 4.87 3.1 3.4 0 4.74-1.6 4.88-3.1a2.91 2.91 0 0 0-1.19-2.68l-.25-.17.22-.2c.5-.46.8-1.07.87-1.73a2.57 2.57 0 0 0-.65-2.04c-.76-.85-2.1-1.3-3.87-1.3m-20.6.3v10.73h2.07V52.83H51.2Zm30.06 0-3.08 6.7-.01 1.87h6.1v2.16h1.88V61.4h1.22v-1.87h-1.22v-6.7h-4.9Zm-20.72 1.58c1.19 0 2.1.24 2.48.68.16.16.2.34.18.59-.07.58-.9 1.17-2.66 1.17-1.75 0-2.6-.58-2.66-1.17a.72.72 0 0 1 .18-.6c.39-.43 1.29-.67 2.48-.67m11.26 0c1.19 0 2.1.24 2.48.68.15.16.2.34.17.59-.05.58-.9 1.17-2.65 1.17-1.76 0-2.6-.58-2.67-1.17a.75.75 0 0 1 .18-.6c.39-.43 1.3-.67 2.48-.67Zm10.65.3h1.82v4.82h-4.03l2.21-4.81Zm-21.91 4.2c.49 0 2.13.06 2.76.73.2.22.28.48.24.86-.09 1.02-1.61 1.37-3 1.37-1.4 0-2.92-.35-3-1.37-.04-.38.03-.64.23-.86.43-.46 1.44-.73 2.77-.73m11.26 0c.49 0 2.13.06 2.75.73.2.22.28.48.25.86-.1 1.02-1.62 1.37-3.02 1.37-1.38 0-2.9-.35-2.99-1.37-.03-.38.04-.64.24-.86.42-.45 1.45-.73 2.77-.73m-.2-46.7c-.76-.48-.01-1.18.7-1.18 1.13 0 2.16 1 2.16 1s-1.96.72-2.86.17Zm-10.57 9.88c-2.63.7-1.93-5.06 1.41-9.67 3.4-4.7 6.06-6.12 6.06-6.12-.57 6.86-4.67 15.04-7.47 15.79M77.4 3.45c-1.67-.8-4.04-.4-6.2.4v-.01C71.35.87 70.9 0 70.9 0l-2.46.69s.32 1.72.17 4.39c-6.4 3.7-10.72 9.9-11.91 14.06-1.3 4.54 2.32 6.07 5.37 3.84 7.5-5.5 9.03-18.05 9.03-18.05 2.27-.7 4.06-.33 5.12.59 2.67 2.3-.79 5.81-.79 5.81s-.9-1.04-2.57-1.2c-2.69-.23-4.06 3-.48 3.34.59.06 2.17-.17 2.76-.46.6 1.1.42 6.22-3.04 7.74-3.1 1.36-4.25-.55-4.25-.55-.1 0-1.68 2.08-1.58 2.27 0 0 1.65 2.46 5.25 1.4 2.85-.82 4.21-3.3 4.94-5.09 1.22-2.96.34-5.57-.13-6.26 4.73-3.3 4.04-7.8 1.08-9.07"></path>
+                  </svg>
+               </li>
+               <li aria-label="Blender">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="116" height="32" fill="none">
+                     <g fill="currentColor">
+                        <path d="M19.4 17.7c0-1.2.6-2.3 1.5-3a5 5 0 0 1 3.3-1.2 5 5 0 0 1 3.2 1.2c.9.7 1.5 1.8 1.5 3a4 4 0 0 1-1.2 3.1c-.9.9-2.1 1.4-3.5 1.4s-2.7-.5-3.5-1.4c-.9-.8-1.4-2-1.3-3.1"></path>
+                        <path d="m11.8 20 .4 2.1a10.9 10.9 0 0 0 2.3 4 12.1 12.1 0 0 0 4.1 3 13.2 13.2 0 0 0 5.4 1.1 13.2 13.2 0 0 0 5.4-1.1 12.2 12.2 0 0 0 4.1-3 11 11 0 0 0 2.3-4 10.2 10.2 0 0 0 .4-4.6 10.5 10.5 0 0 0-1.5-4 11.4 11.4 0 0 0-2.7-3L21 2c-.8-.6-2-.6-2.8 0-.8.5-1 1.4-.2 2l4.6 3.8h-14c-1.2 0-2.3.7-2.5 1.7-.3 1 .5 1.8 1.7 1.8H15L2.2 21c-1.2 1-1.6 2.5-.8 3.5.7 1 2.4 1 3.6 0l6.9-5.7zm17.8 2.6A7.8 7.8 0 0 1 24 25c-2.2 0-4.1-.8-5.6-2.3a6.6 6.6 0 0 1-1.5-2.4 6.3 6.3 0 0 1 .4-5.1 7 7 0 0 1 1.7-2 8 8 0 0 1 5-1.8 8 8 0 0 1 5 1.7 6.9 6.9 0 0 1 1.7 2c.4.8.7 1.7.8 2.5a6.2 6.2 0 0 1-.4 2.7 6.7 6.7 0 0 1-1.5 2.4Zm65.4-5c.1-1.2 1-2 2.5-2 1.4 0 2.3.8 2.4 2zm4.8 3c-.4.9-1.3 1.4-2.4 1.4-1.4 0-2.4-1-2.5-2.3h8.3v-.5c0-3.5-2-5.5-5.8-5.5-3.6 0-5.8 2-5.8 5.2s2.2 5.2 5.8 5.2c2.2 0 3.8-.8 4.9-2zm-41.5-3c0-1.1 1-1.9 2.4-1.9s2.3.8 2.4 2h-4.8Zm4.7 3c-.4.9-1.2 1.4-2.4 1.4-1.4 0-2.4-1-2.4-2.3h8.3v-.5c0-3.5-2.1-5.5-5.9-5.5-3.6 0-5.8 2-5.8 5.2S57 24 60.6 24c2.2 0 3.9-.8 4.9-2L63 20.5Zm-9-9h-3v12.2h3V11.4Zm13.2 3.2h3v.7a5 5 0 0 1 3.8-1.7c1.6 0 2.9.6 3.6 1.5.5.8.5 1.8.5 3.1v5.3h-3V19c0-1.9-.4-2.8-2-2.8-1.8 0-2.9 1-2.9 2.8v4.7h-3v-9ZM87.8 19c0 1.7-1.1 2.8-2.8 2.8s-3-1-3-2.8c0-1.7 1.1-2.7 2.9-2.7 1.7 0 2.8 1 2.8 2.7Zm0-3.8c-.7-.8-1.8-1.3-3.4-1.3-3.3 0-5.5 2-5.5 5.1 0 3 2.2 5 5.5 5 1.5 0 2.6-.3 3.4-1.2v1h3v-13l-3 .7zm-43.6 1c1.8 0 2.9 1.1 2.9 2.8 0 1.7-1.1 2.8-2.9 2.8-1.7 0-2.8-1.1-2.8-2.8 0-1.7 1-2.7 2.8-2.7Zm-2.8-4.7-3-.8v13h3V23c.8.8 2 1.2 3.4 1.2 3.3 0 5.5-2.1 5.5-5.1 0-3-2.2-5-5.5-5-1.6 0-2.7.4-3.4 1.2v-3.7ZM104 23.8v-9h3v.5c.9-1 1.8-1.6 3-1.6h.8v2.6a7.6 7.6 0 0 0-1 0c-1.7 0-2.8 1.1-2.8 3.1v4.4zm8.9-10.8v-1h.6a.3.3 0 0 1 .1.3.3.3 0 0 1 0 .2.3.3 0 0 1-.2 0 .4.4 0 0 1-.1 0h-.3.3a.1.1 0 0 0 0-.1v-.2h-.2v.7h-.2Zm.5-.4.2.4h-.2l-.2-.4zm-.2.9a.9.9 0 0 1-.6-.3.9.9 0 0 1-.3-.6.9.9 0 0 1 .6-.9.9.9 0 0 1 .3 0 .9.9 0 0 1 .7.2 1 1 0 0 1 .2.7 1 1 0 0 1-.5.8.9.9 0 0 1-.4 0Zm0-.3a.6.6 0 0 0 .4 0 .7.7 0 0 0 .3-.6.7.7 0 1 0-1.3 0 .7.7 0 0 0 .3.5z"></path>
+                     </g>
+                  </svg>
+               </li>
+               <li aria-label="Zalando">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="143" height="30" fill="none">
+                     <path fill="currentColor" fill-rule="evenodd" d="M62.58 7.74c-1.03-.58-2.57-.86-4.69-.86-2.9 0-5.59.62-6.6 1a.66.66 0 0 0-.49.62v.08l.29 1.46v.03c.1.3.34.43.56.43a.98.98 0 0 0 .18-.03l.49-.11c1.26-.32 3.17-.8 5.3-.8 1.3 0 2.16.1 2.75.35.94.37.95 1 .96 2.02v1.54a24.65 24.65 0 0 0-.57 0c-1.05 0-3.1.04-5.12.37-3.08.48-5.63 1.23-5.62 5.54 0 5.48 5 5.49 7.4 5.5 1.64-.01 3.14-.26 4.13-.46 2.24-.53 2.81-1.25 2.78-3.51V11.8c0-1.39 0-3.12-1.76-4.07ZM61.34 21.8c-1.2.39-2.5.59-3.88.59-2.21-.02-4.37-.28-4.37-3.14.01-2.28 1.2-2.54 2.72-2.89l.1-.02a40.6 40.6 0 0 1 5.43-.36zm27.98-10v9.1c.03 2.26-.54 2.99-2.78 3.51-.98.21-2.5.45-4.12.46-2.4 0-7.4-.02-7.4-5.5-.02-4.3 2.53-5.05 5.6-5.53a33.5 33.5 0 0 1 5.7-.38v-1.53c-.01-1.03-.02-1.65-.96-2.02a7.3 7.3 0 0 0-2.75-.36c-2.13 0-4.04.49-5.3.8l-.48.12a.58.58 0 0 1-.74-.4v-.03l-.3-1.46V8.5c0-.34.25-.55.48-.62 1.02-.38 3.71-1 6.62-1 2.11 0 3.65.28 4.68.86 1.76.94 1.76 2.67 1.75 4.06m-2.98 4.18c-.7.01-4.08.06-5.43.36l-.1.02c-1.52.35-2.72.61-2.73 2.9 0 2.85 2.16 3.11 4.37 3.13 1.39 0 2.7-.2 3.88-.6V16Zm48.26-9.1c-6.97.01-7.56 4.66-7.56 9.01 0 4.34.6 8.97 7.56 8.98 6.95-.02 7.55-4.63 7.56-8.98-.01-4.56-.6-9-7.56-9Zm0 15.45c-4.23-.02-4.44-2.22-4.47-6.44.03-4.23.24-6.45 4.46-6.47 4.23.02 4.44 2.24 4.47 6.47-.03 4.21-.24 6.42-4.46 6.44m-12.5 1.9-.18.04c-.98.25-2.3.6-4.65.6-6.45-.02-7.71-3.31-7.72-9.01 0-6.54 2.05-8.97 7.53-8.98 1.93 0 3.26.26 4.22.5V2.1c-.01-.23.09-.54.63-.64l1.7-.44h.1c.4 0 .53.36.53.66v19.78c.03 1.25-.11 2.32-2.16 2.76Zm-.8-14.33a16.68 16.68 0 0 0-3.97-.51c-3.3.03-4.68.94-4.72 6.5.04 6.1 1.83 6.44 4.75 6.47 1.82 0 3.38-.39 3.93-.54V9.9Zm-15.38 14.55h-1.53a.7.7 0 0 1-.72-.73V12c-.03-1.99-.62-2.54-2.72-2.57-2.39 0-4.8.61-5.6.83v13.47c0 .43-.28.73-.68.73h-1.56a.71.71 0 0 1-.72-.73V10.56c-.03-1.21.09-2.06 1.8-2.62A25.25 25.25 0 0 1 101 6.88c3.94 0 5.62 1.45 5.62 4.83v12.02a.71.71 0 0 1-.72.73Zm-34.68.32c.89-.02 1.53-.2 1.8-.48a.5.5 0 0 0 .11-.34c0-.1 0-.1-.25-1.25v-.03c-.05-.3-.26-.43-.44-.43H72c-.63-.03-1.15-.12-1.16-1.05V1.69c0-.32-.2-.66-.56-.66h-.12l-1.71.44c-.3.03-.6.24-.58.64v19.14c0 2.27 1.2 3.52 3.37 3.52m-24.21-.32H34.74a.71.71 0 0 1-.72-.73V22.2c0-.38.11-.54.34-.82l9.78-11.54h-9.58a.71.71 0 0 1-.72-.74V8.03a.71.71 0 0 1 .72-.73h12.4a.71.71 0 0 1 .73.73v1.55c0 .28-.1.52-.31.77l-9.8 11.56h9.45a.71.71 0 0 1 .72.73v1.09a.71.71 0 0 1-.72.72M6 29.3a3.72 3.72 0 0 1-1.93-.43c-.43-.25-1.22-.89-1.92-2.78A32.26 32.26 0 0 1 .32 15.01V15c.03-4.36.7-8.05 1.83-11.08.71-1.9 1.5-2.53 1.93-2.78.3-.18.89-.43 1.93-.43.4 0 .86.04 1.4.12 3.15.52 6.64 1.78 10.37 3.93h.01c3.7 2.2 6.51 4.64 8.53 7.16 1.26 1.56 1.4 2.58 1.4 3.08s-.14 1.51-1.4 3.08a31.45 31.45 0 0 1-8.53 7.15h-.01A30.98 30.98 0 0 1 7.4 29.17a8.53 8.53 0 0 1-1.4.13" clip-rule="evenodd"></path>
+                  </svg>
+               </li>
+            </ul>
+         </section>
+         <div class="isolate border-b border-gray-300 bg-gradient-to-b from-white to-gray-50 pb-8 md:pb-14">
+            <section id="markets" class="mx-auto w-full max-w-7xl px-4">
+               <div class="relative mx-auto w-full max-w-full bg-[url(../images/earth-bg.png)] bg-[size:71.25rem] bg-[50%_2.5rem] bg-no-repeat px-4 md:max-w-7xl">
+                  <h2 class="mx-auto mb-20 mt-6 max-w-lg text-center font-heading text-2xl md:mt-8 md:text-4xl">Launch new markets and regions in days</h2>
+                  <div class="relative">
+                     <div class="mx-auto mb-12 grid w-80 max-w-[714px] grid-cols-3 gap-x-4 gap-y-16 text-center text-sm sm:w-auto sm:grid-cols-5 sm:text-base">
+                        <ul role="list" class="contents">
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9 hidden sm:inline-flex">Warehouses</li>
+                           <li class="text-violet-900 inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Customers</li>
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Checkouts</li>
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Vouchers</li>
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9 hidden sm:inline-flex">Promotions</li>
+                        </ul>
+                        <ul role="list" class="contents">
+                           <li class="col-start-1 text-blue-300 sm:col-start-2 h-9 rounded-full bg-gray-900 font-semibold">
+                              <span class="inline-flex h-9 w-full items-center justify-center gap-x-2 rounded-full bg-blue/20">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 25" class="-ml-2 hidden w-6 md:block">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20M2 12h20"></path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10"></path>
+                                 </svg>
+                                 B2B - UK
+                              </span>
+                           </li>
+                           <li class="text-violet-300 h-9 rounded-full bg-gray-900 font-semibold">
+                              <span class="inline-flex h-9 w-full items-center justify-center gap-x-2 rounded-full bg-violet-500/20">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 25" class="-ml-2 hidden w-6 md:block">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20M2 12h20"></path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10"></path>
+                                 </svg>
+                                 D2C - EU
+                              </span>
+                           </li>
+                           <li class="text-amber-500 h-9 rounded-full bg-gray-900 font-semibold">
+                              <span class="inline-flex h-9 w-full items-center justify-center gap-x-2 rounded-full bg-amber-500/20">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 25" class="-ml-2 hidden w-6 md:block">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20M2 12h20"></path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10"></path>
+                                 </svg>
+                                 D2C - US
+                              </span>
+                           </li>
+                        </ul>
+                        <ul role="list" class="contents">
+                           <li class="col-start-1 inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9 hidden sm:inline-flex">Logistics</li>
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Catalog</li>
+                           <li class="text-violet-900 inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Permissions</li>
+                           <li class="inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9">Taxes</li>
+                           <li class="text-green-900 inline-flex h-8 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm sm:h-9 hidden sm:inline-flex">Orders</li>
+                        </ul>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 714 232" aria-hidden="true" class="pointer-events-none absolute bottom-4 left-1/2 -z-40 -mb-3 h-[232px] w-[540px] -translate-x-1/2 sm:w-[714px] sm:max-w-full">
+                        <path stroke="#DDE1EA" stroke-dasharray="10 10" stroke-linecap="square" d="M.5 18.5h713m-713 196h713M.5 67.5h713m-713 49h713m-713 49h713m-713 49h713m-649 17V.5m147 231V.5m147 232V1.5m147 231V1.5m147 231V1.5"></path>
+                        <path fill="url(#markets_svg__a)" fill-opacity="0.1" fill-rule="evenodd" d="M214 27.58v32a5.5 5.5 0 0 0 5.5 5.5H351c5.8 0 10.5 4.7 10.5 10.5v22.5h-5v-22.5a5.5 5.5 0 0 0-5.5-5.5H219.5c-5.8 0-10.5-4.7-10.5-10.5v-32z" clip-rule="evenodd"></path>
+                        <path fill="url(#markets_svg__b)" fill-rule="evenodd" d="M212 27.58v32a7.5 7.5 0 0 0 7.5 7.5H351a8.5 8.5 0 0 1 8.5 8.5v22.5h-1v-22.5a7.5 7.5 0 0 0-7.5-7.5H219.5a8.5 8.5 0 0 1-8.5-8.5v-32z" clip-rule="evenodd"></path>
+                        <path fill="url(#markets_svg__c)" fill-opacity="0.1" fill-rule="evenodd" d="M361.5 119.08v79h-5v-79z" clip-rule="evenodd"></path>
+                        <path fill="url(#markets_svg__d)" fill-rule="evenodd" d="M359.5 119.08v79h-1v-79z" clip-rule="evenodd"></path>
+                        <g fill-rule="evenodd" class="markets_svg__green-line" clip-rule="evenodd">
+                           <path fill="url(#markets_svg__e)" fill-opacity="0.1" d="M654.5 30.08v168h-5v-168z"></path>
+                           <path fill="url(#markets_svg__f)" d="M652.5 30.08v168h-1v-168z"></path>
+                        </g>
+                        <defs>
+                           <linearGradient id="markets_svg__a" x1="210.58" x2="304.62" y1="28.34" y2="142.77" gradientUnits="userSpaceOnUse">
+                              <stop stop-opacity="0"></stop>
+                              <stop offset="0.1" stop-color="#A78CF2"></stop>
+                              <stop offset="0.5" stop-color="#C2BDFF"></stop>
+                              <stop offset="0.91" stop-color="#AD8CF2"></stop>
+                              <stop offset="1" stop-opacity="0"></stop>
+                           </linearGradient>
+                           <linearGradient id="markets_svg__b" x1="211.32" x2="305.36" y1="27.74" y2="142.17" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#fff" stop-opacity="0"></stop>
+                              <stop offset="0.1" stop-color="#A78CF2"></stop>
+                              <stop offset="0.5" stop-color="#C2BDFF"></stop>
+                              <stop offset="0.91" stop-color="#AD8CF2"></stop>
+                              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                           </linearGradient>
+                           <linearGradient id="markets_svg__c" x1="217.91" x2="311.95" y1="122.31" y2="236.75" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.1" stop-color="#fff"></stop>
+                              <stop offset="0.5" stop-color="#C2BDFF"></stop>
+                              <stop offset="0.91" stop-color="#AD8CF2"></stop>
+                              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                           </linearGradient>
+                           <linearGradient id="markets_svg__d" x1="218.65" x2="312.69" y1="121.71" y2="236.14" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.1" stop-color="#fff"></stop>
+                              <stop offset="0.5" stop-color="#C2BDFF"></stop>
+                              <stop offset="0.91" stop-color="#AD8CF2"></stop>
+                              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                           </linearGradient>
+                           <linearGradient id="markets_svg__e" x1="510.91" x2="686.66" y1="36.95" y2="137.51" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.1" stop-color="#fff"></stop>
+                              <stop offset="0.5" stop-color="#77D880"></stop>
+                              <stop offset="0.91" stop-color="#77D880"></stop>
+                              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                           </linearGradient>
+                           <linearGradient id="markets_svg__f" x1="511.65" x2="687.39" y1="35.67" y2="136.23" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.1" stop-color="#fff"></stop>
+                              <stop offset="0.5" stop-color="#77D880"></stop>
+                              <stop offset="0.91" stop-color="#77D880"></stop>
+                              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                  </div>
+               </div>
+               <hr class="mx-4 mb-12 max-w-7xl bg-gray-200 md:mx-auto">
+               <ul role="list" class="mx-auto grid w-max max-w-7xl grid-cols-1 gap-y-8 text-center md:w-full md:grid-cols-3">
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 text-green">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M7 11V7a5 5 0 1 1 10 0v4"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Access control of each channel</h3>
+                     <p class="text-balance max-w-[224px] text-sm font-normal text-gray-600">Collaborate safely across channels with teams.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 text-blue">
+                        <path fill="currentColor" d="M12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M3.75 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M7.5 23.25a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m9 4.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M20.25 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M16.5 6.75a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-9 4.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Single source of truth</h3>
+                     <p class="text-balance max-w-[224px] text-sm font-normal text-gray-600">Operate business from a�&nbsp;single instance efficiently.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 25" class="w-6 text-purple">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20M2 12h20"></path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Global out of the box</h3>
+                     <p class="text-balance max-w-[224px] text-sm font-normal text-gray-600">Ready to power global operations across borders.</p>
+                  </li>
+               </ul>
+            </section>
+         </div>
+         <section class="mx-auto w-full max-w-7xl px-4 py-8">
+            <div class="text-center">
+               <div class="inline-flex h-8 items-center justify-center rounded-full bg-gray-100 px-4 font-sans text-sm">Checkout</div>
+            </div>
+            <h2 class="mx-auto my-4 max-w-lg text-center font-heading text-2xl md:mt-4 md:text-4xl">Future-proof your checkout</h2>
+            <p class="mx-auto max-w-lg text-center font-sans text-base text-gray-600 md:text-lg">Adapt to ever-changing business requirements with Saleor's extensible checkout model.</p>
+            <div class="mx-auto mb-4 mt-8 w-full max-w-xs text-center md:mb-20">
+               <a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="/features/checkout">
+                  Explore Checkout
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="ml-2 h-6 w-6 text-white">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 8.25V4.5C13 1 7 1 7 4.5v3.75M4 5.5h12a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1"></path>
+                  </svg>
+               </a>
+            </div>
+            <div class="relative block overflow-hidden">
+               <div class="absolute bottom-0 left-0 top-0 z-10 w-40 bg-gradient-to-r from-white to-transparent"></div>
+               <div class="absolute bottom-0 right-0 top-0 z-10 w-40 bg-gradient-to-l from-white to-transparent"></div>
+               <div class="relative mb-8 mt-2 h-12 overflow-hidden">
+                  <ul role="list" class="carousel absolute left-0 top-0 flex h-full translate-x-0 transform-gpu items-center justify-center gap-4 md:mb-8 xl:justify-between">
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M11.935 7.581a1.666 1.666 0 0 0-1.571-1.111h-1.29a1.487 1.487 0 0 0-.319 2.941l1.964.429a1.667 1.667 0 0 1-.357 3.296h-1.11a1.666 1.666 0 0 1-1.571-1.11M9.808 6.47V4.803m0 10v-1.666m-6.949 6.146V15.71h3.572"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M19.13 8.291a9.286 9.286 0 0 1-16.272 7.643m-1.98-4.226a9.286 9.286 0 0 1 16.271-7.642"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429" d="M17.15.717v3.571h-3.572"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Subscriptions
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="M17.5 3h-15A1.5 1.5 0 0 0 1 4.5v11A1.5 1.5 0 0 0 2.5 17h15a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 17.5 3m0 12.5h-15v-11h15zM7.5 10c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m-2.8 4h5.6c.387 0 .7-.269.7-.6v-.6c0-.994-.94-1.8-2.1-1.8-.338 0-.584.25-1.4.25-.84 0-1.044-.25-1.4-.25-1.16 0-2.1.806-2.1 1.8v.6c0 .331.313.6.7.6m7.55-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .137.113.25.25.25m0-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .137.113.25.25.25m0-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .138.113.25.25.25"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Address validation
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M11.665 1.667H5a1.667 1.667 0 0 0-1.667 1.666v13.334A1.667 1.667 0 0 0 5 18.333h10a1.667 1.667 0 0 0 1.666-1.666v-10l-5-5Z"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M11.668 1.667v5h5m-3.333 4.166H6.668m6.667 3.334H6.668M8.335 7.5H6.668"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Order quotes
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <g clip-path="url(#pay-later_svg__a)">
+                                    <path fill="currentColor" d="m14.585 14.017 2.033 1.175-.625 1.083-2.658-1.533v-3.075h1.25zm5.416.15A5.829 5.829 0 0 1 14.168 20a5.83 5.83 0 0 1-5.833-5.833c0-.284.025-.559.066-.834H1.668v-10h15V8.9a5.841 5.841 0 0 1 3.333 5.267m-11.1-2.5c.15-.3.309-.584.5-.859-.075.025-.15.025-.233.025a2.497 2.497 0 0 1-2.5-2.5c0-1.383 1.117-2.5 2.5-2.5s2.5 1.117 2.5 2.5c0 .209-.033.417-.083.609a5.864 5.864 0 0 1 2.583-.609c.283 0 .558.025.833.067V6.667A1.667 1.667 0 0 1 13.335 5H5a1.66 1.66 0 0 1-1.666 1.667V10A1.667 1.667 0 0 1 5 11.667zm9.434 2.5c0-2.3-1.867-4.167-4.167-4.167a4.168 4.168 0 0 0-4.167 4.167 4.168 4.168 0 0 0 8.334 0"></path>
+                                 </g>
+                                 <defs>
+                                    <clipPath id="pay-later_svg__a">
+                                       <path fill="#fff" d="M0 0h20v20H0z"></path>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                           </span>
+                           <!-- -->Pay later
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M3.335 2.5a1.66 1.66 0 0 0-1.667 1.667V7.5a1.66 1.66 0 0 0 1.667 1.667h3.333A1.66 1.66 0 0 0 8.335 7.5V4.167A1.66 1.66 0 0 0 6.668 2.5m.167 1.25.883.875-3.325 3.292-2.108-2.125.891-.875 1.225 1.241m-1.066 4.675A1.66 1.66 0 0 0 1.668 12.5v3.333A1.66 1.66 0 0 0 3.335 17.5h3.333a1.66 1.66 0 0 0 1.667-1.667V12.5a1.66 1.66 0 0 0-1.667-1.667M3.335 12.5h3.333v3.333H3.335M10 4.167h8.334v1.666H10m0 10v-1.666h8.334v1.666M10 9.167h8.334v1.666H10z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-fulfillment
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="M9.165 16.667v-6.334L5 6.167v2.166H3.332v-5h5V5H6.165l4.667 4.667v7zm3.209-7.834-1.209-1.208L13.832 5h-2.167V3.333h5v5H15V6.167z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Split payments
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.667" d="M17.08 3.333H2.915c-.69 0-1.25.56-1.25 1.25v10.834c0 .69.56 1.25 1.25 1.25h14.167c.69 0 1.25-.56 1.25-1.25V4.583c0-.69-.56-1.25-1.25-1.25Z"></path>
+                                 <path stroke="currentColor" stroke-width="1.667" d="M1.664 4.583a1.25 1.25 0 0 1 1.25-1.25h14.167a1.25 1.25 0 0 1 1.25 1.25v3.75H1.664z"></path>
+                                 <path fill="currentColor" d="M3.33 5.833a.833.833 0 1 1 1.666 0 .833.833 0 0 1-1.667 0Zm2.5 0a.833.833 0 1 1 1.666 0 .833.833 0 0 1-1.667 0Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Single page
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="m2.754 13.177-.75 4.523a.257.257 0 0 0 .071.225.26.26 0 0 0 .226.072l4.511-.763a.257.257 0 0 0 .14-.436l-.883-.882 2.368-2.369a.257.257 0 0 0 0-.364L6.805 11.55a.256.256 0 0 0-.28-.056.256.256 0 0 0-.084.056l-2.368 2.368-.883-.883a.257.257 0 0 0-.436.14Zm14.492-6.354.75-4.523a.257.257 0 0 0-.071-.224.258.258 0 0 0-.226-.072l-4.511.762a.257.257 0 0 0-.14.437l.883.882-2.368 2.368a.257.257 0 0 0 0 .364l1.632 1.632a.257.257 0 0 0 .364 0l2.368-2.368.883.883a.258.258 0 0 0 .436-.14Zm-4.07 10.423 4.524.75a.258.258 0 0 0 .224-.071.256.256 0 0 0 .072-.226l-.762-4.511a.257.257 0 0 0-.437-.14l-.882.883-2.368-2.369a.26.26 0 0 0-.364 0l-1.632 1.633a.259.259 0 0 0-.056.28c.013.032.032.06.056.084l2.368 2.368-.883.883a.257.257 0 0 0 .14.436M6.824 2.754 2.3 2.004a.257.257 0 0 0-.224.071.258.258 0 0 0-.072.226l.762 4.511a.258.258 0 0 0 .437.14l.882-.883 2.368 2.368c.1.101.263.101.364 0L8.45 6.806a.258.258 0 0 0 0-.364L6.081 4.073l.883-.883a.259.259 0 0 0-.14-.436"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-gateway
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M10.001 18.333a8.333 8.333 0 1 1 0-16.666 8.333 8.333 0 1 1 0 16.666m0-1.666a6.666 6.666 0 1 0 0-13.333 6.666 6.666 0 0 0 0 13.333M10.835 10h3.333v1.667h-5V5.833h1.667z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pre-orders
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="m14.396 15.104-.354-.354a.61.61 0 0 0-.448-.188.614.614 0 0 0-.448.188.6.6 0 0 0-.188.438.6.6 0 0 0 .188.437l.812.813a.6.6 0 0 0 .438.187.6.6 0 0 0 .437-.188l2.021-1.979a.612.612 0 0 0 .188-.448.609.609 0 0 0-.188-.447.612.612 0 0 0-.448-.188.61.61 0 0 0-.448.188zM5.833 7.5h8.334c.236 0 .434-.08.594-.24.16-.16.24-.358.239-.593a.807.807 0 0 0-.24-.595.803.803 0 0 0-.593-.239H5.833a.807.807 0 0 0-.594.24.803.803 0 0 0-.239.594c0 .236.08.434.24.594.16.16.358.24.593.239M15 19.167c-1.153 0-2.136-.407-2.948-1.22-.813-.812-1.22-1.795-1.219-2.947 0-1.153.407-2.136 1.22-2.948.812-.813 1.795-1.22 2.947-1.219 1.153 0 2.136.407 2.948 1.22.813.812 1.22 1.795 1.219 2.947 0 1.153-.407 2.136-1.22 2.948-.812.813-1.795 1.22-2.947 1.219m-12.5-.938V4.167c0-.459.163-.851.49-1.178.327-.326.719-.49 1.177-.489h11.666c.459 0 .851.163 1.178.49.326.327.49.719.489 1.177v5.562a5.765 5.765 0 0 0-1.667-.5V4.167H4.167v11.708h5.062c.07.43.177.84.324 1.23.146.388.336.756.572 1.103a.353.353 0 0 1-.22-.031.669.669 0 0 1-.197-.135l-.666-.667a.4.4 0 0 0-.584 0l-.666.667a.4.4 0 0 1-.584 0l-.666-.667a.4.4 0 0 0-.584 0l-.666.667a.4.4 0 0 1-.584 0l-.666-.667a.4.4 0 0 0-.584 0l-.666.667zm3.333-4.062H9.23a5.843 5.843 0 0 1 .5-1.667H5.833a.807.807 0 0 0-.594.24.803.803 0 0 0-.239.593c0 .236.08.434.24.595.16.16.358.24.593.239m0-3.334h5.084a5.97 5.97 0 0 1 1.844-1.219A5.644 5.644 0 0 1 15 9.167H5.833a.807.807 0 0 0-.594.24A.803.803 0 0 0 5 10c0 .236.08.434.24.594.16.16.358.24.593.24Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Order approvals
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path fill="currentColor" d="M7.813 2.813H4.374a1.562 1.562 0 0 0-1.563 1.562v3.438a1.562 1.562 0 0 0 1.563 1.562h3.438a1.562 1.562 0 0 0 1.562-1.563V4.376a1.562 1.562 0 0 0-1.563-1.563ZM7.5 7.5H4.687V4.687H7.5zm.313 3.125H4.374a1.563 1.563 0 0 0-1.563 1.563v3.437a1.563 1.563 0 0 0 1.563 1.563h3.438a1.563 1.563 0 0 0 1.562-1.563v-3.438a1.563 1.563 0 0 0-1.563-1.562ZM7.5 15.313H4.687V12.5H7.5zm8.125-12.5h-3.438a1.563 1.563 0 0 0-1.562 1.562v3.438a1.563 1.563 0 0 0 1.563 1.562h3.437a1.563 1.563 0 0 0 1.563-1.563V4.376a1.563 1.563 0 0 0-1.563-1.563M15.312 7.5H12.5V4.687h2.813V7.5Zm-4.687 5.938v-1.876a.938.938 0 0 1 1.875 0v1.876a.938.938 0 0 1-1.875 0m6.563-.626a.938.938 0 0 1-.938.938h-.938v2.5a.938.938 0 0 1-.937.938h-2.813a.938.938 0 0 1 0-1.875h1.876v-3.75a.938.938 0 0 1 1.874 0v.312h.938a.938.938 0 0 1 .938.938Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Custom payment
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="M3.333 5V3.333h13.334V5zm0 11.667v-5H2.5V10l.833-4.167h13.334L17.5 10v1.667h-.833v5H15v-5h-3.333v5zM5 15h5v-3.333H5z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pick-up in store
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M3.336 5.833V7.5h13.333V5.833a1.667 1.667 0 0 0-1.666-1.666h-10a1.667 1.667 0 0 0-1.667 1.666"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M13.336 4.167h1.667a1.667 1.667 0 0 1 1.666 1.666V7.5H3.336V5.833a1.667 1.667 0 0 1 1.667-1.666h1.666m6.667 0V2.5m0 1.667H6.669m0 0V2.5M3.336 7.917v7.916A1.666 1.666 0 0 0 5.003 17.5h10a1.666 1.666 0 0 0 1.666-1.667V7.917"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Reservations
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M12.501 5.833h-5m5 3.334h-5m5 3.333H9.168m-5-10h11.667v15l-.86-.737a1.667 1.667 0 0 0-2.17 0l-.86.737-.859-.737a1.667 1.667 0 0 0-2.17 0l-.859.737-.86-.737a1.667 1.667 0 0 0-2.169 0l-.86.737z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pay by invoice
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path fill="currentColor" d="M9.999 8.333 8.832 7.167l1.313-1.334h-3.48V4.167h3.48L8.81 2.833 10 1.667 13.332 5zm-4.167 10c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176c0-.459.164-.851.49-1.178.327-.326.72-.49 1.177-.489.458 0 .85.163 1.178.49.326.327.49.719.489 1.177 0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49Zm8.333 0c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176c0-.459.164-.851.49-1.178.327-.326.72-.49 1.177-.489.459 0 .851.163 1.178.49.326.327.49.719.489 1.177 0 .458-.163.85-.49 1.177-.327.327-.719.49-1.177.49Zm-13.333-15V1.667h2.73l3.54 7.5h5.834l3.25-5.834h1.896l-3.667 6.625a1.668 1.668 0 0 1-.615.646c-.257.153-.538.23-.843.23H6.749L5.832 12.5h10v1.667h-10c-.625 0-1.1-.271-1.427-.813-.327-.541-.337-1.09-.031-1.646l1.125-2.041-3-6.334z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Express checkout
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="M15.417 14c-.584 0-1-.5-1-1 0-.583.5-1 1-1s1 .5 1 1c.083.5-.417 1-1 1m0-4c-1.584 0-2.917 1.333-2.917 2.917 0 2.166 2.917 5.416 2.917 5.416s2.916-3.25 2.916-5.416C18.333 11.333 17 10 15.417 10m-3-.583A2.502 2.502 0 0 0 10 7.5c-1.417 0-2.5 1.083-2.5 2.5s1.083 2.5 2.5 2.5c.333 0 .583-.083.833-.167.167-1.166.75-2.166 1.584-2.916m-1.584 3.916h-5a1.667 1.667 0 0 0-1.666-1.666V8.333a1.667 1.667 0 0 0 1.666-1.666h8.334a1.667 1.667 0 0 0 1.666 1.666s.834 0 1.667.5V5h-15v10h8.75c-.167-.583-.333-1.083-.417-1.667"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Cash on delivery
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M11.665 10.833a2.41 2.41 0 0 1-1.77-.729 2.411 2.411 0 0 1-.73-1.77c0-.695.243-1.285.73-1.772a2.41 2.41 0 0 1 1.77-.729 2.41 2.41 0 0 1 1.771.73 2.41 2.41 0 0 1 .73 1.77c0 .695-.244 1.285-.73 1.771a2.411 2.411 0 0 1-1.77.73Zm-5.833 2.5c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176V5c0-.458.164-.85.49-1.178.327-.326.72-.49 1.177-.489h11.667c.458 0 .85.164 1.177.49.327.327.49.72.49 1.177v6.667c0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49zm1.667-1.666h8.333c0-.459.163-.851.49-1.178.327-.327.719-.49 1.177-.49V6.668c-.459 0-.851-.164-1.178-.49A1.602 1.602 0 0 1 15.832 5H7.499c0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49V10c.458 0 .85.163 1.178.49.326.327.49.719.489 1.177m9.166 5H2.5c-.459 0-.851-.164-1.178-.49A1.602 1.602 0 0 1 .832 15V5.833h1.667V15h14.166z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Manual payments
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M4.997 15h10m-10-3.334h10m3.334-4.708v9.708a1.667 1.667 0 0 1-1.667 1.667H3.331a1.667 1.667 0 0 1-1.667-1.666v-9.71a1.667 1.667 0 0 1 1.05-1.541L9.381 2.75a1.667 1.667 0 0 1 1.233 0l6.667 2.667a1.667 1.667 0 0 1 1.05 1.541"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M4.996 8.333h10v10h-10z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-warehouse
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M11.935 7.581a1.666 1.666 0 0 0-1.571-1.111h-1.29a1.487 1.487 0 0 0-.319 2.941l1.964.429a1.667 1.667 0 0 1-.357 3.296h-1.11a1.666 1.666 0 0 1-1.571-1.11M9.808 6.47V4.803m0 10v-1.666m-6.949 6.146V15.71h3.572"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M19.13 8.291a9.286 9.286 0 0 1-16.272 7.643m-1.98-4.226a9.286 9.286 0 0 1 16.271-7.642"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429" d="M17.15.717v3.571h-3.572"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Subscriptions
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="M17.5 3h-15A1.5 1.5 0 0 0 1 4.5v11A1.5 1.5 0 0 0 2.5 17h15a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 17.5 3m0 12.5h-15v-11h15zM7.5 10c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m-2.8 4h5.6c.387 0 .7-.269.7-.6v-.6c0-.994-.94-1.8-2.1-1.8-.338 0-.584.25-1.4.25-.84 0-1.044-.25-1.4-.25-1.16 0-2.1.806-2.1 1.8v.6c0 .331.313.6.7.6m7.55-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .137.113.25.25.25m0-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .137.113.25.25.25m0-2h3.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25v.5c0 .138.113.25.25.25"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Address validation
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M11.665 1.667H5a1.667 1.667 0 0 0-1.667 1.666v13.334A1.667 1.667 0 0 0 5 18.333h10a1.667 1.667 0 0 0 1.666-1.666v-10l-5-5Z"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M11.668 1.667v5h5m-3.333 4.166H6.668m6.667 3.334H6.668M8.335 7.5H6.668"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Order quotes
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <g clip-path="url(#pay-later_svg__a)">
+                                    <path fill="currentColor" d="m14.585 14.017 2.033 1.175-.625 1.083-2.658-1.533v-3.075h1.25zm5.416.15A5.829 5.829 0 0 1 14.168 20a5.83 5.83 0 0 1-5.833-5.833c0-.284.025-.559.066-.834H1.668v-10h15V8.9a5.841 5.841 0 0 1 3.333 5.267m-11.1-2.5c.15-.3.309-.584.5-.859-.075.025-.15.025-.233.025a2.497 2.497 0 0 1-2.5-2.5c0-1.383 1.117-2.5 2.5-2.5s2.5 1.117 2.5 2.5c0 .209-.033.417-.083.609a5.864 5.864 0 0 1 2.583-.609c.283 0 .558.025.833.067V6.667A1.667 1.667 0 0 1 13.335 5H5a1.66 1.66 0 0 1-1.666 1.667V10A1.667 1.667 0 0 1 5 11.667zm9.434 2.5c0-2.3-1.867-4.167-4.167-4.167a4.168 4.168 0 0 0-4.167 4.167 4.168 4.168 0 0 0 8.334 0"></path>
+                                 </g>
+                                 <defs>
+                                    <clipPath id="pay-later_svg__a">
+                                       <path fill="#fff" d="M0 0h20v20H0z"></path>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                           </span>
+                           <!-- -->Pay later
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M3.335 2.5a1.66 1.66 0 0 0-1.667 1.667V7.5a1.66 1.66 0 0 0 1.667 1.667h3.333A1.66 1.66 0 0 0 8.335 7.5V4.167A1.66 1.66 0 0 0 6.668 2.5m.167 1.25.883.875-3.325 3.292-2.108-2.125.891-.875 1.225 1.241m-1.066 4.675A1.66 1.66 0 0 0 1.668 12.5v3.333A1.66 1.66 0 0 0 3.335 17.5h3.333a1.66 1.66 0 0 0 1.667-1.667V12.5a1.66 1.66 0 0 0-1.667-1.667M3.335 12.5h3.333v3.333H3.335M10 4.167h8.334v1.666H10m0 10v-1.666h8.334v1.666M10 9.167h8.334v1.666H10z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-fulfillment
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="M9.165 16.667v-6.334L5 6.167v2.166H3.332v-5h5V5H6.165l4.667 4.667v7zm3.209-7.834-1.209-1.208L13.832 5h-2.167V3.333h5v5H15V6.167z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Split payments
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.667" d="M17.08 3.333H2.915c-.69 0-1.25.56-1.25 1.25v10.834c0 .69.56 1.25 1.25 1.25h14.167c.69 0 1.25-.56 1.25-1.25V4.583c0-.69-.56-1.25-1.25-1.25Z"></path>
+                                 <path stroke="currentColor" stroke-width="1.667" d="M1.664 4.583a1.25 1.25 0 0 1 1.25-1.25h14.167a1.25 1.25 0 0 1 1.25 1.25v3.75H1.664z"></path>
+                                 <path fill="currentColor" d="M3.33 5.833a.833.833 0 1 1 1.666 0 .833.833 0 0 1-1.667 0Zm2.5 0a.833.833 0 1 1 1.666 0 .833.833 0 0 1-1.667 0Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Single page
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="m2.754 13.177-.75 4.523a.257.257 0 0 0 .071.225.26.26 0 0 0 .226.072l4.511-.763a.257.257 0 0 0 .14-.436l-.883-.882 2.368-2.369a.257.257 0 0 0 0-.364L6.805 11.55a.256.256 0 0 0-.28-.056.256.256 0 0 0-.084.056l-2.368 2.368-.883-.883a.257.257 0 0 0-.436.14Zm14.492-6.354.75-4.523a.257.257 0 0 0-.071-.224.258.258 0 0 0-.226-.072l-4.511.762a.257.257 0 0 0-.14.437l.883.882-2.368 2.368a.257.257 0 0 0 0 .364l1.632 1.632a.257.257 0 0 0 .364 0l2.368-2.368.883.883a.258.258 0 0 0 .436-.14Zm-4.07 10.423 4.524.75a.258.258 0 0 0 .224-.071.256.256 0 0 0 .072-.226l-.762-4.511a.257.257 0 0 0-.437-.14l-.882.883-2.368-2.369a.26.26 0 0 0-.364 0l-1.632 1.633a.259.259 0 0 0-.056.28c.013.032.032.06.056.084l2.368 2.368-.883.883a.257.257 0 0 0 .14.436M6.824 2.754 2.3 2.004a.257.257 0 0 0-.224.071.258.258 0 0 0-.072.226l.762 4.511a.258.258 0 0 0 .437.14l.882-.883 2.368 2.368c.1.101.263.101.364 0L8.45 6.806a.258.258 0 0 0 0-.364L6.081 4.073l.883-.883a.259.259 0 0 0-.14-.436"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-gateway
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M10.001 18.333a8.333 8.333 0 1 1 0-16.666 8.333 8.333 0 1 1 0 16.666m0-1.666a6.666 6.666 0 1 0 0-13.333 6.666 6.666 0 0 0 0 13.333M10.835 10h3.333v1.667h-5V5.833h1.667z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pre-orders
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path fill="currentColor" d="m14.396 15.104-.354-.354a.61.61 0 0 0-.448-.188.614.614 0 0 0-.448.188.6.6 0 0 0-.188.438.6.6 0 0 0 .188.437l.812.813a.6.6 0 0 0 .438.187.6.6 0 0 0 .437-.188l2.021-1.979a.612.612 0 0 0 .188-.448.609.609 0 0 0-.188-.447.612.612 0 0 0-.448-.188.61.61 0 0 0-.448.188zM5.833 7.5h8.334c.236 0 .434-.08.594-.24.16-.16.24-.358.239-.593a.807.807 0 0 0-.24-.595.803.803 0 0 0-.593-.239H5.833a.807.807 0 0 0-.594.24.803.803 0 0 0-.239.594c0 .236.08.434.24.594.16.16.358.24.593.239M15 19.167c-1.153 0-2.136-.407-2.948-1.22-.813-.812-1.22-1.795-1.219-2.947 0-1.153.407-2.136 1.22-2.948.812-.813 1.795-1.22 2.947-1.219 1.153 0 2.136.407 2.948 1.22.813.812 1.22 1.795 1.219 2.947 0 1.153-.407 2.136-1.22 2.948-.812.813-1.795 1.22-2.947 1.219m-12.5-.938V4.167c0-.459.163-.851.49-1.178.327-.326.719-.49 1.177-.489h11.666c.459 0 .851.163 1.178.49.326.327.49.719.489 1.177v5.562a5.765 5.765 0 0 0-1.667-.5V4.167H4.167v11.708h5.062c.07.43.177.84.324 1.23.146.388.336.756.572 1.103a.353.353 0 0 1-.22-.031.669.669 0 0 1-.197-.135l-.666-.667a.4.4 0 0 0-.584 0l-.666.667a.4.4 0 0 1-.584 0l-.666-.667a.4.4 0 0 0-.584 0l-.666.667a.4.4 0 0 1-.584 0l-.666-.667a.4.4 0 0 0-.584 0l-.666.667zm3.333-4.062H9.23a5.843 5.843 0 0 1 .5-1.667H5.833a.807.807 0 0 0-.594.24.803.803 0 0 0-.239.593c0 .236.08.434.24.595.16.16.358.24.593.239m0-3.334h5.084a5.97 5.97 0 0 1 1.844-1.219A5.644 5.644 0 0 1 15 9.167H5.833a.807.807 0 0 0-.594.24A.803.803 0 0 0 5 10c0 .236.08.434.24.594.16.16.358.24.593.24Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Order approvals
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path fill="currentColor" d="M7.813 2.813H4.374a1.562 1.562 0 0 0-1.563 1.562v3.438a1.562 1.562 0 0 0 1.563 1.562h3.438a1.562 1.562 0 0 0 1.562-1.563V4.376a1.562 1.562 0 0 0-1.563-1.563ZM7.5 7.5H4.687V4.687H7.5zm.313 3.125H4.374a1.563 1.563 0 0 0-1.563 1.563v3.437a1.563 1.563 0 0 0 1.563 1.563h3.438a1.563 1.563 0 0 0 1.562-1.563v-3.438a1.563 1.563 0 0 0-1.563-1.562ZM7.5 15.313H4.687V12.5H7.5zm8.125-12.5h-3.438a1.563 1.563 0 0 0-1.562 1.562v3.438a1.563 1.563 0 0 0 1.563 1.562h3.437a1.563 1.563 0 0 0 1.563-1.563V4.376a1.563 1.563 0 0 0-1.563-1.563M15.312 7.5H12.5V4.687h2.813V7.5Zm-4.687 5.938v-1.876a.938.938 0 0 1 1.875 0v1.876a.938.938 0 0 1-1.875 0m6.563-.626a.938.938 0 0 1-.938.938h-.938v2.5a.938.938 0 0 1-.937.938h-2.813a.938.938 0 0 1 0-1.875h1.876v-3.75a.938.938 0 0 1 1.874 0v.312h.938a.938.938 0 0 1 .938.938Z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Custom payment
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="M3.333 5V3.333h13.334V5zm0 11.667v-5H2.5V10l.833-4.167h13.334L17.5 10v1.667h-.833v5H15v-5h-3.333v5zM5 15h5v-3.333H5z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pick-up in store
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M3.336 5.833V7.5h13.333V5.833a1.667 1.667 0 0 0-1.666-1.666h-10a1.667 1.667 0 0 0-1.667 1.666"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M13.336 4.167h1.667a1.667 1.667 0 0 1 1.666 1.666V7.5H3.336V5.833a1.667 1.667 0 0 1 1.667-1.666h1.666m6.667 0V2.5m0 1.667H6.669m0 0V2.5M3.336 7.917v7.916A1.666 1.666 0 0 0 5.003 17.5h10a1.666 1.666 0 0 0 1.666-1.667V7.917"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Reservations
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M12.501 5.833h-5m5 3.334h-5m5 3.333H9.168m-5-10h11.667v15l-.86-.737a1.667 1.667 0 0 0-2.17 0l-.86.737-.859-.737a1.667 1.667 0 0 0-2.17 0l-.859.737-.86-.737a1.667 1.667 0 0 0-2.169 0l-.86.737z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Pay by invoice
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-purple">
+                                 <path fill="currentColor" d="M9.999 8.333 8.832 7.167l1.313-1.334h-3.48V4.167h3.48L8.81 2.833 10 1.667 13.332 5zm-4.167 10c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176c0-.459.164-.851.49-1.178.327-.326.72-.49 1.177-.489.458 0 .85.163 1.178.49.326.327.49.719.489 1.177 0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49Zm8.333 0c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176c0-.459.164-.851.49-1.178.327-.326.72-.49 1.177-.489.459 0 .851.163 1.178.49.326.327.49.719.489 1.177 0 .458-.163.85-.49 1.177-.327.327-.719.49-1.177.49Zm-13.333-15V1.667h2.73l3.54 7.5h5.834l3.25-5.834h1.896l-3.667 6.625a1.668 1.668 0 0 1-.615.646c-.257.153-.538.23-.843.23H6.749L5.832 12.5h10v1.667h-10c-.625 0-1.1-.271-1.427-.813-.327-.541-.337-1.09-.031-1.646l1.125-2.041-3-6.334z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Express checkout
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-orange">
+                                 <path fill="currentColor" d="M15.417 14c-.584 0-1-.5-1-1 0-.583.5-1 1-1s1 .5 1 1c.083.5-.417 1-1 1m0-4c-1.584 0-2.917 1.333-2.917 2.917 0 2.166 2.917 5.416 2.917 5.416s2.916-3.25 2.916-5.416C18.333 11.333 17 10 15.417 10m-3-.583A2.502 2.502 0 0 0 10 7.5c-1.417 0-2.5 1.083-2.5 2.5s1.083 2.5 2.5 2.5c.333 0 .583-.083.833-.167.167-1.166.75-2.166 1.584-2.916m-1.584 3.916h-5a1.667 1.667 0 0 0-1.666-1.666V8.333a1.667 1.667 0 0 0 1.666-1.666h8.334a1.667 1.667 0 0 0 1.666 1.666s.834 0 1.667.5V5h-15v10h8.75c-.167-.583-.333-1.083-.417-1.667"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Cash on delivery
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-green">
+                                 <path fill="currentColor" d="M11.665 10.833a2.41 2.41 0 0 1-1.77-.729 2.411 2.411 0 0 1-.73-1.77c0-.695.243-1.285.73-1.772a2.41 2.41 0 0 1 1.77-.729 2.41 2.41 0 0 1 1.771.73 2.41 2.41 0 0 1 .73 1.77c0 .695-.244 1.285-.73 1.771a2.411 2.411 0 0 1-1.77.73Zm-5.833 2.5c-.458 0-.85-.163-1.177-.49a1.602 1.602 0 0 1-.49-1.176V5c0-.458.164-.85.49-1.178.327-.326.72-.49 1.177-.489h11.667c.458 0 .85.164 1.177.49.327.327.49.72.49 1.177v6.667c0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49zm1.667-1.666h8.333c0-.459.163-.851.49-1.178.327-.327.719-.49 1.177-.49V6.668c-.459 0-.851-.164-1.178-.49A1.602 1.602 0 0 1 15.832 5H7.499c0 .458-.164.85-.49 1.177-.327.327-.72.49-1.177.49V10c.458 0 .85.163 1.178.49.326.327.49.719.489 1.177m9.166 5H2.5c-.459 0-.851-.164-1.178-.49A1.602 1.602 0 0 1 .832 15V5.833h1.667V15h14.166z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Manual payments
+                        </div>
+                     </li>
+                     <li>
+                        <div class="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-gray-300 px-4 text-center text-base font-semibold text-gray-900 hover:bg-gray-50 sm:px-4">
+                           <span class="mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-blue">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M4.997 15h10m-10-3.334h10m3.334-4.708v9.708a1.667 1.667 0 0 1-1.667 1.667H3.331a1.667 1.667 0 0 1-1.667-1.666v-9.71a1.667 1.667 0 0 1 1.05-1.541L9.381 2.75a1.667 1.667 0 0 1 1.233 0l6.667 2.667a1.667 1.667 0 0 1 1.05 1.541"></path>
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M4.996 8.333h10v10h-10z"></path>
+                              </svg>
+                           </span>
+                           <!-- -->Multi-warehouse
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="block md:hidden">
+               <div role="region" aria-roledescription="carousel" class="mx-auto my-0 md:my-4 max-w-sm">
+                  <div aria-live="polite" class="slider hide-scrollbar smooth-scroll flex transform-gpu overflow-x-scroll py-4 px-8 w-full gap-x-4">
+                     <div role="tabpanel" id="slide-:Raldsla:-0" aria-hidden="false" tabindex="0" aria-roledescription="slide" aria-label="1 of 3" class="w-full">
+                        <div class="flex flex-col justify-between overflow-hidden rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Payment Orchestration</h3>
+                              <p class="font-sans text-sm text-gray-600">Save on processing fees, reduce fraud, and increase conversion across markets.</p>
+                           </div>
+                           <div class="-ml-28 mt-4 flex flex-col items-center"><img alt="" loading="lazy" width="1200" height="708" decoding="async" data-nimg="1" style="color:transparent" srcset="image_10 1x, image_2 2x" src="image_2"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:Raldsla:-1" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="2 of 3" class="w-full">
+                        <div class="flex flex-col justify-between rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Promotions</h3>
+                              <p class="font-sans text-sm text-gray-600">Create multi-conditional discount rules that work in all markets and currencies.</p>
+                           </div>
+                           <div class="mt-4 flex flex-col items-center"><img alt="Checkout Discount Feature" loading="lazy" width="621" height="546" decoding="async" data-nimg="1" style="color:transparent" srcset="image_7 1x, image 2x" src="image"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:Raldsla:-2" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="3 of 3" class="w-full">
+                        <div class="flex flex-col justify-between rounded border">
+                           <ul role="list" class="mx-auto grid max-w-7xl grid-cols-1 divide-y text-center md:w-full md:grid-cols-3">
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Vouchers &amp; Gift Cards</h3>
+                                    <p class="max-w-xs text-sm font-normal text-gray-600">Manage vouchers and gift cards across multiple markets and currencies.</p>
+                                 </div>
+                              </li>
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Multiple and partial payments</h3>
+                                    <p class="max-w-xs text-sm font-normal text-gray-600">Split customer payments into installments and between multiple sources.</p>
+                                 </div>
+                              </li>
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Custom Flows</h3>
+                                    <p class="max-w-xs text-sm font-normal text-gray-600">Take full control of your checkout and order flow.</p>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tablist" aria-label="Slides" class="flex w-full flex-row justify-center gap-x-1 px-16 rounded-lg [&amp;>*:hover]:bg-gray-400 [&amp;>*]:bg-gray-200 [&amp;>[aria-selected=" true"]]:bg-gray-900"=""><button type="button" role="tab" aria-label="Go to slide 1" aria-selected="true" aria-controls="slide-:Raldsla:-0" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 2" aria-selected="false" aria-controls="slide-:Raldsla:-1" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 3" aria-selected="false" aria-controls="slide-:Raldsla:-2" aria-busy="false" class="block h-1 flex-1 transition-colors"></button>
+               </div>
+            </div>
+            </div>
+            <div class="hidden md:block">
+               <div class="grid grid-cols-2 overflow-hidden rounded-lg border border-gray-200">
+                  <div>
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Promotions</h3>
+                        <p class="font-sans text-sm text-gray-600">Create multi-conditional discount rules that work in all markets and currencies.</p>
+                     </div>
+                     <div class="bottom-fade mt-4 flex flex-col items-start overflow-hidden pl-4 xl:items-center xl:pl-0"><img alt="Checkout Promotions" loading="lazy" width="546" height="361" decoding="async" data-nimg="1" class="w-full object-cover object-left" style="color:transparent" src="images/checkout-promotions.8eb13234.svg"></div>
+                  </div>
+                  <div class="border-l">
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Payment Orchestration</h3>
+                        <p class="font-sans text-sm text-gray-600">Save on processing fees, reduce fraud, and increase conversion across markets.</p>
+                     </div>
+                     <div class="mt-4 object-cover"><img alt="Checkout Payment" loading="lazy" width="1200" height="708" decoding="async" data-nimg="1" class="h-[360px] w-full object-cover object-left" style="color:transparent" srcset="image_10 1x, image_2 2x" src="image_2"></div>
+                  </div>
+               </div>
+               <ul role="list" class="mx-auto mt-12 grid w-max max-w-7xl grid-cols-1 gap-y-8 text-center md:w-full md:grid-cols-3">
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-green">
+                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667">
+                           <path d="M16.662 10v8.333H3.328V10m15.01-4.167H1.672V10h16.666zM10 18.333v-12.5"></path>
+                           <path d="M10.005 5.834h-3.75a2.083 2.083 0 1 1 0-4.167c2.917 0 3.75 4.167 3.75 4.167"></path>
+                           <path d="M10 5.834h3.75a2.083 2.083 0 0 0 0-4.167c-2.917 0-3.75 4.167-3.75 4.167"></path>
+                        </g>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Vouchers &amp; Gift Cards</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Manage vouchers and gift cards across multiple markets and currencies.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-blue">
+                        <path fill="currentColor" d="M12.835 0a2.249 2.249 0 0 0-.457.072L1.921 2.62C.685 2.923-.089 4.17.215 5.408l1.466 5.987a2.3 2.3 0 0 0 1.394 1.586v-1.442a3.85 3.85 0 0 1 3.846-3.847h9.688l-1.442-5.937A2.31 2.31 0 0 0 12.835 0m.937 3.318.626 2.62-2.597.624-.649-2.596zM6.922 9.23a2.309 2.309 0 0 0-2.308 2.308v6.153A2.309 2.309 0 0 0 6.92 20h10.77a2.309 2.309 0 0 0 2.307-2.308V11.54a2.309 2.309 0 0 0-2.307-2.308H6.92Zm0 1.226H17.69c.593 0 1.081.488 1.081 1.082v.769H5.84v-.77c0-.593.488-1.081 1.081-1.081ZM5.84 14.615h12.932v3.077c0 .593-.488 1.082-1.081 1.082H6.92a1.088 1.088 0 0 1-1.081-1.082z"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Multiple and partial payments</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Split customer payments into installments and between multiple sources.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-purple">
+                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" clip-path="url(#gear_svg__a)">
+                           <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path>
+                           <path d="M16.165 12.5a1.374 1.374 0 0 0 .275 1.517l.05.05a1.667 1.667 0 1 1-2.358 2.358l-.05-.05a1.375 1.375 0 0 0-1.517-.275 1.376 1.376 0 0 0-.833 1.258v.142a1.667 1.667 0 0 1-3.333 0v-.075a1.375 1.375 0 0 0-.9-1.258 1.375 1.375 0 0 0-1.517.275l-.05.05a1.668 1.668 0 1 1-2.358-2.359l.05-.05a1.375 1.375 0 0 0 .275-1.516 1.375 1.375 0 0 0-1.259-.834H2.5a1.667 1.667 0 1 1 0-3.333h.075a1.375 1.375 0 0 0 1.258-.9 1.375 1.375 0 0 0-.275-1.517l-.05-.05a1.667 1.667 0 1 1 2.358-2.358l.05.05a1.375 1.375 0 0 0 1.517.275H7.5a1.375 1.375 0 0 0 .833-1.258V2.5a1.667 1.667 0 0 1 3.333 0v.075a1.374 1.374 0 0 0 .834 1.258 1.375 1.375 0 0 0 1.516-.275l.05-.05a1.667 1.667 0 1 1 2.359 2.359l-.05.05a1.375 1.375 0 0 0-.275 1.516V7.5a1.375 1.375 0 0 0 1.258.833h.142a1.667 1.667 0 0 1 0 3.334h-.075a1.375 1.375 0 0 0-1.259.833Z"></path>
+                        </g>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Custom Flows</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Take full control of your checkout and order flow.</p>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="mx-auto w-full max-w-7xl px-4 py-8">
+            <div class="text-center">
+               <div class="inline-flex h-8 items-center justify-center rounded-full bg-gray-100 px-4 font-sans text-sm">Merchandising</div>
+            </div>
+            <h2 class="mx-auto my-4 max-w-lg text-center font-heading text-2xl md:mt-4 md:text-4xl">Rich content model</h2>
+            <p class="mx-auto max-w-lg text-center font-sans text-base text-gray-600 md:text-lg">Manage catalog and localizations across different markets from a single source.</p>
+            <div class="mx-auto mb-4 mt-8 w-full max-w-xs text-center md:mb-20">
+               <a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="/features/merchandising">
+                  Explore PIM
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" class="ml-2 h-6 w-6 text-white">
+                     <path stroke="currentColor" stroke-width="1.4" d="M4.15 16.57v-.01a1.6 1.6 0 0 1-.5-1.17V5.83c0-.91.76-1.66 1.67-1.66h9.56c.45 0 .87.17 1.18.48l11.77 11.77c.67.67.66 1.71.01 2.36l-9.56 9.56c-.65.65-1.7.65-2.36 0zm12.24 11.3.7.71.71-.7 9.56-9.57.71-.7-.7-.71L15.58 5.13l-.3-.3H4.33v10.98l.3.29L16.4 27.87Z"></path>
+                     <path fill="currentColor" stroke="currentColor" stroke-width="1.4" d="M9.66 9.17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+                  </svg>
+               </a>
+            </div>
+            <div class="block md:hidden">
+               <div role="region" aria-roledescription="carousel" class="mx-auto my-0 md:my-4 max-w-sm">
+                  <div aria-live="polite" class="slider hide-scrollbar smooth-scroll flex transform-gpu overflow-x-scroll py-4 px-8 w-full gap-x-4">
+                     <div role="tabpanel" id="slide-:R6pdsla:-0" aria-hidden="false" tabindex="0" aria-roledescription="slide" aria-label="1 of 3" class="w-full">
+                        <div class="flex h-96 flex-col justify-between rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Flexible product and content modelings</h3>
+                              <p class="font-sans text-sm text-gray-600">Share attributes across product types, create unlimited product options and catalog content.</p>
+                           </div>
+                           <div><img alt="Merchandising Product" loading="lazy" width="621" height="402" decoding="async" data-nimg="1" style="color:transparent" srcset="image_13 1x, image_5 2x" src="image_5"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:R6pdsla:-1" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="2 of 3" class="w-full">
+                        <div class="flex h-96 flex-col justify-between overflow-hidden rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Spreadsheet interface</h3>
+                              <p class="font-sans text-sm text-gray-600">Boost merchandising productivity by copy-and-pasting from external sheets.</p>
+                           </div>
+                           <div class="flex flex-col items-center"><img alt="Merchandising Spreadsheet" loading="lazy" width="621" height="546" decoding="async" data-nimg="1" style="color:transparent" srcset="image_8 1x, image_1 2x" src="image_1"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:R6pdsla:-2" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="3 of 3" class="w-full">
+                        <div class="flex h-96 flex-col justify-between rounded border">
+                           <ul role="list" class="mx-auto grid max-w-7xl grid-cols-1 divide-y text-center">
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Gift cards</h3>
+                                    <p class="text-pretty max-w-xs text-sm font-normal text-gray-600">Manage virtual and physical gift cards as products, not just codes.</p>
+                                 </div>
+                              </li>
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Manage stock and availability</h3>
+                                    <p class="text-pretty max-w-xs text-sm font-normal text-gray-600">Manage availability and stock of products across different channels.</p>
+                                 </div>
+                              </li>
+                              <li class="flex h-32 items-center p-4">
+                                 <div>
+                                    <h3 class="mb-1 font-semibold">Content translation</h3>
+                                    <p class="text-pretty max-w-xs text-sm font-normal text-gray-600">Fully localizable catalog content via admin interface.</p>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tablist" aria-label="Slides" class="flex w-full flex-row justify-center gap-x-1 px-16 rounded-lg [&amp;>*:hover]:bg-gray-400 [&amp;>*]:bg-gray-200 [&amp;>[aria-selected=" true"]]:bg-gray-900"=""><button type="button" role="tab" aria-label="Go to slide 1" aria-selected="true" aria-controls="slide-:R6pdsla:-0" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 2" aria-selected="false" aria-controls="slide-:R6pdsla:-1" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 3" aria-selected="false" aria-controls="slide-:R6pdsla:-2" aria-busy="false" class="block h-1 flex-1 transition-colors"></button>
+               </div>
+            </div>
+            </div>
+            <div class="hidden md:block">
+               <div class="grid grid-cols-2 rounded-lg border border-gray-200">
+                  <div>
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Flexible product and content modelings</h3>
+                        <p class="font-sans text-sm text-gray-600">Share attributes across product types, create unlimited product options and catalog content.</p>
+                     </div>
+                     <div class="right-fade mt-4 flex flex-col items-start overflow-hidden xl:items-center"><img alt="Merchandising Product" loading="lazy" width="600" height="354" decoding="async" data-nimg="1" class="h-[360px] w-full object-cover object-left-bottom" style="color:transparent" src="images/merchandising-product.10eb2413.svg"></div>
+                  </div>
+                  <div class="flex flex-col justify-between border-l">
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Spreadsheet interface</h3>
+                        <p class="font-sans text-sm text-gray-600">Boost merchandising productivity by copy-and-pasting from external sheets.</p>
+                     </div>
+                     <div class="mt-4 flex flex-col items-center "><img alt="Merchandising Spreadsheet" loading="lazy" width="1200" height="708" decoding="async" data-nimg="1" class="h-[360px] object-cover object-left-bottom" style="color:transparent" srcset="image_11 1x, image_3 2x" src="image_3"></div>
+                  </div>
+               </div>
+               <ul role="list" class="mx-auto mt-12 grid w-max max-w-7xl grid-cols-1 gap-y-8 text-center md:w-full md:grid-cols-3">
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-green">
+                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667">
+                           <path d="M16.662 10v8.333H3.328V10m15.01-4.167H1.672V10h16.666zM10 18.333v-12.5"></path>
+                           <path d="M10.005 5.834h-3.75a2.083 2.083 0 1 1 0-4.167c2.917 0 3.75 4.167 3.75 4.167"></path>
+                           <path d="M10 5.834h3.75a2.083 2.083 0 0 0 0-4.167c-2.917 0-3.75 4.167-3.75 4.167"></path>
+                        </g>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Gift cards</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Manage virtual and physical gift cards as products, not just codes.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-blue">
+                        <path fill="currentColor" d="M10.001 4.292 3.335 6.958v8.875H5v-5c0-.458.164-.85.49-1.177.327-.327.72-.49 1.177-.49h6.667c.458 0 .85.164 1.177.49.327.327.49.72.49 1.177v5h1.666V6.958zM1.668 15.833V6.958A1.636 1.636 0 0 1 2.71 5.417L9.376 2.75a1.57 1.57 0 0 1 .625-.125c.223 0 .43.042.625.125l6.667 2.667a1.63 1.63 0 0 1 1.042 1.542v8.874c0 .459-.164.851-.49 1.178-.327.326-.72.49-1.177.489h-3.333v-6.667H6.668V17.5H3.335c-.459 0-.851-.163-1.178-.49a1.602 1.602 0 0 1-.489-1.177M7.501 17.5v-1.667h1.667V17.5zM9.168 15v-1.667h1.667V15zm1.667 2.5v-1.667H12.5V17.5h-1.666Z"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Manage stock and availability</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Manage availability and stock of products across different channels.</p>
+                  </li>
+                  <li class="flex flex-col items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-6 text-purple">
+                        <path fill="currentColor" d="m12.582 15.791-.73 2.021a.772.772 0 0 1-.29.375.782.782 0 0 1-.46.146.81.81 0 0 1-.676-.344.734.734 0 0 1-.094-.76l3.167-8.375a.91.91 0 0 1 .312-.375.782.782 0 0 1 .459-.146h.625c.166 0 .319.049.458.146a.91.91 0 0 1 .312.375l3.167 8.396a.713.713 0 0 1-.083.74.782.782 0 0 1-.667.343.73.73 0 0 1-.468-.156 1.005 1.005 0 0 1-.303-.406l-.687-1.98zm.5-1.458h3l-1.458-4.125h-.084zm-5.583-2.667L3.915 15.25a.79.79 0 0 1-.583.229.79.79 0 0 1-.583-.23.79.79 0 0 1-.23-.583.79.79 0 0 1 .23-.583l3.625-3.625a13.38 13.38 0 0 1-1.386-1.812 13.282 13.282 0 0 1-1.031-1.98h1.75c.25.5.518.952.803 1.355.285.402.628.826 1.03 1.27A11.583 11.583 0 0 0 9.061 7.24c.403-.702.743-1.448 1.021-2.24H1.665a.807.807 0 0 1-.594-.24.803.803 0 0 1-.239-.592c0-.237.08-.435.24-.595.16-.16.358-.24.593-.239h5V2.5c0-.236.08-.434.24-.594.16-.16.358-.24.594-.24s.434.08.594.24c.16.16.24.358.239.594v.833h5c.236 0 .434.08.594.24.16.16.24.358.24.594s-.08.434-.24.594a.803.803 0 0 1-.594.239h-1.583a15.13 15.13 0 0 1-1.188 2.875c-.5.93-1.118 1.805-1.854 2.625l2 2.041-.625 1.709z"></path>
+                     </svg>
+                     <h3 class="mb-1 mt-4 font-semibold">Content translation</h3>
+                     <p class="max-w-xs text-sm font-normal text-gray-600">Fully localizable catalog content via admin interface.</p>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="mx-auto w-full max-w-7xl px-4 py-8">
+            <div class="text-center">
+               <div class="inline-flex h-8 items-center justify-center rounded-full bg-gray-100 px-4 font-sans text-sm">Order Management</div>
+            </div>
+            <h2 class="mx-auto my-4 max-w-lg text-center font-heading text-2xl md:mt-4 md:text-4xl">Flexible order model</h2>
+            <p class="mx-auto max-w-lg text-center font-sans text-base text-gray-600 md:text-lg">Streamline customer support operations across multiple markets and teams.</p>
+            <div class="mx-auto mb-4 mt-8 w-full max-w-xs text-center md:mb-20">
+               <a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="/features/operations">
+                  Explore OMS
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 24" class="ml-2 h-6 w-6 text-white">
+                     <path fill="currentColor" d="M5.5 8v11h14V8h-3v6.375c0 .383-.158.671-.475.863a.95.95 0 0 1-.975.037L12.5 14l-2.55 1.275a.951.951 0 0 1-.975-.038c-.317-.192-.475-.479-.475-.861V8zm0 13c-.55 0-1.021-.196-1.413-.588A1.922 1.922 0 0 1 3.5 19V6.525c0-.233.038-.458.113-.675a1.96 1.96 0 0 1 .337-.6L5.2 3.725c.183-.233.412-.413.687-.538.275-.125.562-.188.863-.187h11.5c.3 0 .588.063.863.188s.504.304.687.537l1.25 1.525c.15.183.263.383.338.6.075.217.113.442.112.675V19c0 .55-.196 1.021-.588 1.413A1.922 1.922 0 0 1 19.5 21zm.4-15h13.2l-.85-1H6.75zm4.6 2v4.75l2-1 2 1V8z"></path>
+                  </svg>
+               </a>
+            </div>
+            <div class="block md:hidden">
+               <div role="region" aria-roledescription="carousel" class="mx-auto my-0 md:my-4 max-w-sm">
+                  <div aria-live="polite" class="slider hide-scrollbar smooth-scroll flex transform-gpu overflow-x-scroll py-4 px-8 w-full gap-x-4">
+                     <div role="tabpanel" id="slide-:R6tdsla:-0" aria-hidden="false" tabindex="0" aria-roledescription="slide" aria-label="1 of 4" class="w-full">
+                        <div class="flex h-96 flex-col justify-between overflow-hidden rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Multi-gateway payments and refunds</h3>
+                              <p class="font-sans text-sm text-gray-600">Manage multi-gateway payments and refunds from a single dashboard.</p>
+                           </div>
+                           <div class="left-fade right-fade -ml-2 -mr-16 mt-2 flex flex-col items-center"><img alt="Order Payments" loading="lazy" width="600" height="354" decoding="async" data-nimg="1" style="color:transparent" src="images/order-payments.c5aff7b5.svg"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:R6tdsla:-1" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="2 of 4" class="w-full">
+                        <div class="flex h-96 flex-col justify-between overflow-hidden rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Multiple fulfillments</h3>
+                              <p class="font-sans text-sm text-gray-600">Split fulfillment across different warehouses and pick up locations.</p>
+                           </div>
+                           <div class="-mr-16 flex flex-col items-center"><img alt="Order Fulfillments" loading="lazy" width="1200" height="708" decoding="async" data-nimg="1" style="color:transparent" srcset="image_9 1x, image_4 2x" src="image_4"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:R6tdsla:-2" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="3 of 4" class="w-full">
+                        <div class="flex h-96 flex-col justify-between overflow-hidden rounded border">
+                           <div class="p-4">
+                              <h3 class="font-heading text-base font-semibold">Multi-gateway payments and refunds</h3>
+                              <p class="font-sans text-sm text-gray-600">Manage multi-gateway payments and refunds from a single dashboard.</p>
+                           </div>
+                           <div class="-mr-72"><img alt="Order Drafts" loading="lazy" width="1800" height="708" decoding="async" data-nimg="1" style="color:transparent" srcset="image_12 1x, image_6 2x" src="image_6"></div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" id="slide-:R6tdsla:-3" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="4 of 4" class="w-full">
+                        <div class="flex h-96 flex-col justify-between rounded border">
+                           <ul role="list" class="mx-auto grid max-w-7xl grid-cols-1 divide-y text-center">
+                              <li class="flex h-48 items-center p-4">
+                                 <div>
+                                    <h3 class="font-heading text-base font-semibold">Channel contextual</h3>
+                                    <p class="text-pretty font-sans text-sm text-gray-600">Isolate data and permissions across channels to collaborate across teams and regions.</p>
+                                 </div>
+                              </li>
+                              <li class="flex h-48 items-center p-4">
+                                 <div>
+                                    <h3 class="font-heading text-base font-semibold">Sync order data</h3>
+                                    <p class="text-pretty font-sans text-sm text-gray-600">Flexible order model API allows to you to import orders in desired state.</p>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tablist" aria-label="Slides" class="flex w-full flex-row justify-center gap-x-1 px-16 rounded-lg [&amp;>*:hover]:bg-gray-400 [&amp;>*]:bg-gray-200 [&amp;>[aria-selected=" true"]]:bg-gray-900"=""><button type="button" role="tab" aria-label="Go to slide 1" aria-selected="true" aria-controls="slide-:R6tdsla:-0" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 2" aria-selected="false" aria-controls="slide-:R6tdsla:-1" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 3" aria-selected="false" aria-controls="slide-:R6tdsla:-2" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 4" aria-selected="false" aria-controls="slide-:R6tdsla:-3" aria-busy="false" class="block h-1 flex-1 transition-colors"></button>
+               </div>
+            </div>
+            </div>
+            <div class="hidden md:block">
+               <ul class="grid grid-cols-1 gap-y-4 pb-8 md:grid-cols-4 md:grid-rows-2 md:gap-x-0">
+                  <li class="col-span-2 flex flex-col justify-between border md:rounded-l-lg">
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Multiple fulfillments</h3>
+                        <p class="font-sans text-sm text-gray-600">Split fulfillment across different warehouses and pick up locations.</p>
+                     </div>
+                     <div class="mt-4 flex items-center overflow-hidden"><img alt="Order Fulfillments" loading="lazy" width="1200" height="708" decoding="async" data-nimg="1" class="h-[360px] object-cover object-left-bottom" style="color:transparent" srcset="image_9 1x, image_4 2x" src="image_4"></div>
+                  </li>
+                  <li class="col-span-2 flex flex-col justify-between border border-l-0 md:rounded-r-lg">
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Multi-gateway payments and refunds</h3>
+                        <p class="font-sans text-sm text-gray-600">Manage multi-gateway payments and refunds from a single dashboard.</p>
+                     </div>
+                     <div class="left-fade right-fade mt-4 flex flex-col items-center"><img alt="Order Payments" loading="lazy" width="600" height="354" decoding="async" data-nimg="1" class="h-[360px] object-cover object-left-bottom" style="color:transparent" src="images/order-payments.c5aff7b5.svg"></div>
+                  </li>
+                  <li class="col-span-1 grid grid-cols-1 border md:rounded-l-lg">
+                     <div class="flex items-center border-b p-6">
+                        <div class="text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="mb-2 inline-flex w-6 text-green-600">
+                              <path fill="currentColor" d="M10.5 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M3.625 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M6.75 19.875a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m7.5 3.75a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M17.375 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M14.25 6.125a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m-7.5 3.75a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-3.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5"></path>
+                              <path fill="currentColor" d="m12.64 4.667 1.234.584-2.024 4.276-1.233-.584zm1.47 11.043-1.194.66-2.417-4.377 1.194-.66zM7.805 4.667l-1.233.583 2.023 4.276 1.233-.583zM5.5 9.666v1.364h2.667V9.668zm6.668 0v1.364h3.333V9.668zM6.332 15.71l1.194.66 2.417-4.377-1.194-.66z"></path>
+                           </svg>
+                           <h3 class="font-heading text-base font-semibold">Channel contextual</h3>
+                           <p class="font-sans text-sm text-gray-600">Isolate data and permissions across channels to collaborate across teams and regions.</p>
+                        </div>
+                     </div>
+                     <div class="flex items-center p-6">
+                        <div class="text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="mb-2 inline-flex w-6 text-blue-600">
+                              <path fill="currentColor" d="M3.836 3.334V5h2.292l-.334.292c-.68.68-1.177 1.42-1.49 2.22a6.648 6.648 0 0 0-.468 2.447c0 1.541.462 2.913 1.386 4.115.924 1.201 2.128 1.996 3.614 2.385v-1.75a4.942 4.942 0 0 1-2.417-1.844 4.931 4.931 0 0 1-.916-2.906c0-.625.118-1.233.354-1.824A4.858 4.858 0 0 1 6.96 6.5l.208-.208v2.042h1.667v-5zm8.333.208v1.75a4.94 4.94 0 0 1 2.417 1.843 4.93 4.93 0 0 1 .917 2.907c0 .625-.118 1.232-.355 1.822a4.877 4.877 0 0 1-1.104 1.636l-.208.209v-2.042h-1.667v5h5V15h-2.291l.333-.291c.68-.68 1.177-1.42 1.49-2.22a6.649 6.649 0 0 0 .468-2.447c0-1.542-.462-2.913-1.386-4.115-.923-1.202-2.128-1.997-3.614-2.385"></path>
+                           </svg>
+                           <h3 class="font-heading text-base font-semibold">Sync order data</h3>
+                           <p class="font-sans text-sm text-gray-600">Flexible order model API allows to you to import orders in desired state.</p>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="col-span-3 flex flex-col justify-between border border-l-0 md:rounded-r-lg">
+                     <div class="p-6">
+                        <h3 class="font-heading text-base font-semibold">Multi-gateway payments and refunds</h3>
+                        <p class="font-sans text-sm text-gray-600">Manage multi-gateway payments and refunds from a single dashboard.</p>
+                     </div>
+                     <div class="mt-4"><img alt="Order Drafts" loading="lazy" width="1800" height="708" decoding="async" data-nimg="1" class="h-[360px] object-cover object-left-bottom" style="color:transparent" srcset="image_12 1x, image_6 2x" src="image_6"></div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section id="appstore" class="mx-auto w-full max-w-7xl px-4">
+            <h2 class="mx-auto my-4 max-w-lg text-center font-heading text-2xl md:mt-4 md:text-4xl">Open source first App Store</h2>
+            <p class="mx-auto max-w-lg text-center font-sans text-base text-gray-600 md:text-lg">Choose Apps from Saleor’s collection of 1st-party integrations. Available to be forked when needed.</p>
+            <div class="mx-auto mt-8 w-full max-w-xs text-center">
+               <a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-gray-300 bg-white text-gray-900 shadow-sm hover:bg-gray-100  focus-visible:bg-gray-100 active:bg-gray-100 disabled:cursor-default disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-400 aria-disabled:cursor-default aria-disabled:border-gray-200 aria-disabled:bg-gray-50 aria-disabled:text-gray-400 h-12 px-4 text-base font-semibold tracking-wide" href="https://apps.saleor.io/">
+                  Explore App Store
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-2 h-5">
+                     <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                  </svg>
+               </a>
+            </div>
+            <div class="my-8 flex h-[319px] bg-[url(../images/appstore.svg)] bg-[size:1150px] bg-center bg-no-repeat md:bg-[size:1440px]"><span class="sr-only">Saleor AppStore supports Strapi, Datadog, Contentful, Sendgrid, DatoCMS, Adyen, Google Merchant, Slack, Mailchimp, Stripe, Avalara TaxJar, and others.</span></div>
+         </section>
+         <div class="developers-section grid-bg-dark pb-8 text-white">
+            <section id="developers" class="mx-auto w-full max-w-7xl px-4 flex max-w-7xl flex-col">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 224 72" class="developers-logo mx-auto">
+                  <g filter="url(#developers-logo_svg__a)">
+                     <path fill="url(#developers-logo_svg__b)" d="M2 71 59 1h163l-59 70z"></path>
+                     <path stroke="url(#developers-logo_svg__c)" d="M2 71 59 1h163l-59 70z"></path>
+                  </g>
+                  <defs>
+                     <linearGradient id="developers-logo_svg__b" x1="227" x2="11" y1="-8" y2="71" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F9F9F9" stop-opacity="0.54"></stop>
+                        <stop offset="1" stop-color="#C8C8C8" stop-opacity="0.01"></stop>
+                     </linearGradient>
+                     <linearGradient id="developers-logo_svg__c" x1="189" x2="48" y1="-18" y2="71" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#A1A1A8" stop-opacity="0.37"></stop>
+                        <stop offset="1" stop-color="#46465C" stop-opacity="0"></stop>
+                     </linearGradient>
+                     <filter id="developers-logo_svg__a" width="274.137" height="123.001" x="-25.059" y="-25.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="13"></feGaussianBlur>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3167_14411"></feComposite>
+                        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_3167_14411" result="shape"></feBlend>
+                     </filter>
+                  </defs>
+               </svg>
+               <header class="mx-auto mb-12 mt-8 max-w-lg text-center md:my-16">
+                  <h2 class="mx-auto max-w-lg text-center font-heading text-2xl md:text-4xl">Extensible API<br> for composable era</h2>
+                  <p class="mt-4 text-base text-white/80 md:text-xl">Power your commerce with GraphQL and composable API.</p>
+               </header>
+               <ul role="list" class="mb-8 grid grid-cols-1 gap-y-6 bg-gradient-to-b from-[#101418] to-gray-900 md:grid-cols-10 md:grid-rows-[repeat(3,400px)] md:gap-4">
+                  <li class="col-span-5 flex h-[400px] items-end rounded-2xl border border-white/10 bg-gray-900 bg-[url(../images/developers-graphql-bg.svg)] bg-[size:500px] bg-right-top bg-no-repeat md:rounded-lg">
+                     <article class="p-6">
+                        <h3 class="mb-2 text-base font-semibold">GraphQL native</h3>
+                        <p class="text-pretty text-sm text-gray-300">No fragmentation of documentation and functionality across different styles of API.</p>
+                        <a class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/graphql">
+                           Why GraphQL 
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-4">
+                              <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                           </svg>
+                        </a>
+                     </article>
+                  </li>
+                  <li class="col-span-5 rounded-2xl border border-white/10 bg-gray-900 md:flex md:flex-col md:rounded-lg md:bg-[url(../images/developers-technologies.svg)] md:bg-[size:11rem] md:bg-[calc(100%-1.5rem)_1.5rem] md:bg-no-repeat">
+                     <article class="p-6">
+                        <h3 class="mb-2 text-base font-semibold">Technology agnostic</h3>
+                        <p class="text-sm text-gray-300">If it works with GraphQL it works with Saleor.</p>
+                        <a target="_blank" class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://github.com/saleor/examples/">
+                           Explore starter kits 
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-4">
+                              <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                           </svg>
+                        </a>
+                     </article>
+                     <div class="mt-8 flex flex-col overflow-hidden border-t border-white/10 md:mt-auto md:grid md:grid-cols-2">
+                        <article class="mb-6 border-white/10 p-6 md:mb-0 md:border-r">
+                           <a target="_blank" href="https://docs.saleor.io/docs/3.x/developer/extending/webhooks/asynchronous-events">
+                              <h3 class="mb-2 whitespace-nowrap text-base font-semibold">
+                                 130+ webhooks 
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 20 20" class="ml-1 inline-block w-5 align-top">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M15 10.8v5a1.7 1.7 0 0 1-1.7 1.7H4.2a1.7 1.7 0 0 1-1.7-1.7V6.7A1.7 1.7 0 0 1 4.2 5h5m3.3-2.5h5v5m-9.2 4.2 9.2-9.2"></path>
+                                 </svg>
+                              </h3>
+                           </a>
+                           <p class="text-sm text-gray-300">Large and constantly growing collection of webhooks.</p>
+                        </article>
+                        <article class="border-t border-white/10 p-6 md:border-t-0">
+                           <a target="_blank" href="https://docs.saleor.io/docs/3.x/developer/extending/webhooks/synchronous-events/overview">
+                              <h3 class="mb-2 whitespace-nowrap text-base font-semibold">
+                                 API extensions 
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 20 20" class="ml-1 inline-block w-5 align-top">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M15 10.8v5a1.7 1.7 0 0 1-1.7 1.7H4.2a1.7 1.7 0 0 1-1.7-1.7V6.7A1.7 1.7 0 0 1 4.2 5h5m3.3-2.5h5v5m-9.2 4.2 9.2-9.2"></path>
+                                 </svg>
+                              </h3>
+                           </a>
+                           <p class="text-sm text-gray-300">Create external resources and modify behavior using your backend services.</p>
+                        </article>
+                     </div>
+                  </li>
+                  <li class="col-span-6 h-[400px] rounded-2xl border border-white/10 bg-gray-900 bg-[url(../images/developers-webhooks-bg.svg)] bg-[size:43.75rem] bg-[100%_12.5rem] bg-no-repeat md:rounded-lg">
+                     <article class="p-6">
+                        <h3 class="mb-2 text-base font-semibold">Event queries</h3>
+                        <p class="text-sm text-gray-300">Customize webhook payloads to reduce roundtrips, improve performance and privacy.</p>
+                        <a class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://docs.saleor.io/docs/3.x/developer/extending/webhooks/subscription-webhook-payloads">
+                           Explore webhooks 
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-4">
+                              <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                           </svg>
+                        </a>
+                     </article>
+                  </li>
+                  <li class="col-span-4 h-[400px] rounded-2xl border border-white/10 bg-gray-900 bg-[url(../images/developers-build-bg.svg)] bg-[size:303px] bg-[50%_3.25rem] bg-no-repeat md:rounded-lg">
+                     <article class="flex h-full flex-col items-start justify-end p-6">
+                        <h3 class="mb-2 text-base font-semibold">Build locally, deploy in cloud</h3>
+                        <p class="text-sm text-gray-300">Use convenience of open source to develop locally or create integration tests.</p>
+                        <a class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://docs.saleor.io/docs/3.x/setup/docker-compose">
+                           Explore local setup 
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-4">
+                              <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                           </svg>
+                        </a>
+                     </article>
+                  </li>
+                  <li class="col-span-4 flex h-[400px] flex-col items-start justify-end rounded-2xl border border-white/10 bg-gray-900 bg-[url(../images/developers-admin-ui.svg)] bg-[size:auto_195px] bg-left-top bg-no-repeat md:rounded-lg">
+                     <article class="p-6">
+                        <h3 class="mb-2 text-base font-semibold">Admin UI extensions</h3>
+                        <p class="text-sm text-gray-300">Expand admin dashboard with custom apps using design system and starter kits.</p>
+                        <a class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://docs.saleor.io/docs/3.x/developer/extending/apps/overview">
+                           Explore Macaw UI 
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-4">
+                              <path fill="currentColor" d="M12.293 5.707a1 1 0 0 1 1.414-1.414l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L17.586 13H5a1 1 0 1 1 0-2h12.586z"></path>
+                           </svg>
+                        </a>
+                     </article>
+                  </li>
+                  <li class="col-span-6 h-[400px] rounded-2xl border border-white/10 bg-gray-900 bg-[url(../images/developers-branch.svg)] bg-[size:130%] bg-[50%_calc(100%-1rem)] bg-no-repeat sm:bg-[size:100%] md:rounded-lg md:bg-[size:676px]">
+                     <article class="p-6">
+                        <h3 class="mb-2 text-base font-semibold">Branch your environments, like code</h3>
+                        <p class="text-sm text-gray-300">Create isolated data copy of your environments for feature development and Continuous Integration.</p>
+                     </article>
+                  </li>
+               </ul>
+            </section>
+            <section id="community" class="mx-auto w-full max-w-7xl px-4 max-w-5xl py-8 md:py-24">
+               <h2 class="mx-auto max-w-lg text-center font-heading text-2xl md:text-4xl">Join the <br>open source community</h2>
+               <p class="mt-4 text-center text-base text-white/80 md:text-xl">
+                  With over <!-- -->19.5k<!-- --> stars on GitHub, Saleor is one of the leading open source commerce platforms.
+               </p>
+               <p class="text-center text-base text-white/80 md:text-xl">Join our OS community of industry experts and learn more about open source at Saleor.</p>
+               <div class="mt-16 flex flex-col items-center justify-center gap-y-6 md:flex-row md:gap-x-6 md:gap-y-0">
+                  <a target="_blank" class="w-full max-w-md md:w-56 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://github.com/saleor/saleor">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19" class="mr-2 h-6 w-6">
+                        <path fill="currentColor" d="M10.3 0A9.4 9.4 0 0 0 .9 9.4a9.4 9.4 0 0 0 6.4 9c.5 0 .7-.2.7-.5v-1.6c-2.7.6-3.2-1.2-3.2-1.2-.4-1.1-1-1.4-1-1.4-.9-.6 0-.6 0-.6 1 0 1.5 1 1.5 1 .8 1.4 2.1 1 2.7.8 0-.6.3-1 .6-1.3-2.1-.2-4.3-1-4.3-4.6 0-1 .4-2 1-2.6a3.4 3.4 0 0 1 0-2.5s.8-.2 2.6 1a8.9 8.9 0 0 1 4.7 0c1.8-1.2 2.6-1 2.6-1 .5 1.3.1 2.3 0 2.5.6.7 1 1.5 1 2.6 0 3.6-2.2 4.4-4.3 4.6.4.3.7.9.7 1.7V18c0 .3.1.6.6.5a9.4 9.4 0 0 0 6.4-9c0-5.2-4.2-9.4-9.3-9.4Z"></path>
+                     </svg>
+                     Star us on GitHub
+                  </a>
+                  <a href="/discord" target="_blank" class="w-full max-w-md md:w-56 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-[#3E4347] bg-[#1C2227] text-white hover:border-[#484D52] hover:bg-[#282D33] focus:border-[#484D52] focus-visible:bg-[#282D33] active:border-[#484D52] active:bg-[#282D33] disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 20" class="mr-2 h-6 w-6">
+                        <path fill="currentColor" d="M20.83 2.27A19.55 19.55 0 0 0 15.88.7c-.21.39-.46.9-.64 1.32a18.18 18.18 0 0 0-5.48 0c-.17-.41-.43-.93-.64-1.32-1.74.3-3.4.83-4.96 1.56A20.77 20.77 0 0 0 .6 16.17a19.8 19.8 0 0 0 6.07 3.12c.5-.68.93-1.4 1.3-2.14a13.3 13.3 0 0 1-2.04-1l.5-.4a14 14 0 0 0 12.14 0l.5.4c-.65.39-1.33.73-2.05 1 .38.75.81 1.47 1.3 2.14 1.98-.62 4-1.56 6.08-3.11a20.7 20.7 0 0 0-3.57-13.91M8.51 13.37c-1.18 0-2.15-1.1-2.15-2.45S7.3 8.47 8.5 8.47s2.18 1.1 2.16 2.45c0 1.35-.95 2.46-2.16 2.46Zm7.98 0c-1.19 0-2.16-1.1-2.16-2.45s.95-2.45 2.16-2.45c1.2 0 2.18 1.1 2.15 2.45 0 1.35-.95 2.46-2.15 2.46Z"></path>
+                     </svg>
+                     Join Discord
+                  </a>
+               </div>
+            </section>
+         </div>
+         <section id="showcases" class="mx-auto -mt-8 w-full bg-gray-50 text-white md:-mt-16">
+            <h2 class="sr-only">Showcases</h2>
+            <div role="region" aria-roledescription="carousel">
+               <div aria-live="polite" class="slider hide-scrollbar smooth-scroll flex transform-gpu overflow-x-scroll">
+                  <div role="tabpanel" id="slide-:Ra5sla:-0" aria-hidden="false" tabindex="0" aria-roledescription="slide" aria-label="1 of 3">
+                     <article class="dark-box flex h-[45rem] w-screen items-end bg-[url('../images/showcases/lush-bg.jpeg')] bg-cover bg-left bg-no-repeat">
+                        <div class="mx-auto grid max-w-7xl grid-cols-1 grid-rows-[1fr,min-content] items-end gap-y-12 px-4 pb-28 md:grid-cols-2 md:gap-x-4 md:gap-y-0 lg:gap-x-20">
+                           <div class="z-10">
+                              <h3>
+                                 <span class="sr-only">Lush</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMin" viewBox="0 0 98 28" class="mb-6 h-16">
+                                    <path fill="currentColor" fill-rule="evenodd" d="M0 1.6v24.8h18.8v-6.3h-11V1.6m36.8 15.2c0 7-3.8 10.2-11.4 10.2-7.6 0-11.4-3.3-11.4-10.2V1.6h7.7V15c0 2.5 0 5.7 3.7 5.7s3.7-3.2 3.7-5.7V1.6h7.7zm11.6 1.3a4.5 4.5 0 0 0 .3 1.6c.5 1.5 2.2 1.8 3.7 1.8 1.2 0 3.1-.4 3.1-2.2 0-1.3-1-1.7-5.3-2.9-4-1.1-8.5-2.2-8.5-7.2 0-5.7 5-8.2 10-8.2C65 1 69.9 3 70 9h-7.3a2 2 0 0 0-.9-1.9 4 4 0 0 0-2.3-.6c-1 0-2.7.3-2.7 1.6.1 1.8 3.7 2.2 7.2 3.2s7 2.6 7 7.2c0 6.4-6 8.5-11.5 8.5-2.8 0-11-1-11-9h7.7Zm34-16.5v8.6H83V1.6h-7.6v24.8H83v-9.8h7.3v9.8h7.6V1.6" clip-rule="evenodd"></path>
+                                 </svg>
+                              </h3>
+                              <p class="text-base md:text-xl md:opacity-80">Inventors of the bath bomb and the home of bath art.</p>
+                              <p class="text-base md:text-xl md:opacity-80">Lush champions ethical and sustainable manufacturing practices of their products, which are available online inover 50+ countries.</p>
+                           </div>
+                           <dl class="z-10 flex flex-row justify-between self-start">
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Clients</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">1.5M+</dd>
+                              </div>
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Countries</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">50+</dd>
+                              </div>
+                           </dl>
+                        </div>
+                     </article>
+                  </div>
+                  <div role="tabpanel" id="slide-:Ra5sla:-1" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="2 of 3">
+                     <article class="dark-box flex h-[45rem] w-screen items-end bg-[url('../images/showcases/roughtrade-bg.jpeg')] bg-cover bg-left bg-no-repeat">
+                        <div class="mx-auto grid max-w-7xl grid-cols-1 grid-rows-[1fr,min-content] items-end gap-y-12 px-4 pb-28 md:grid-cols-2 md:gap-x-4 md:gap-y-0 lg:gap-x-20">
+                           <div class="z-10">
+                              <h3>
+                                 <span class="sr-only">Roughtrade</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 62 46" class="mb-6 w-36">
+                                    <path fill="currentColor" d="M1.71 2.37c1.3-.19 2.58-.43 3.88-.55.86-.08 1.73 0 2.59.04 2.2.1 3.84 1.53 4.1 3.73.16 1.22.16 2.48.07 3.7a3.62 3.62 0 0 1-1.54 2.78c1.23.98 1.32 2.32 1.4 3.68.05 1.24.07 2.47.18 3.7.05.47.23.95.47 1.36.29.52.07.87-.36.92-.95.1-1.94.22-2.86.05-.87-.16-1.09-1.05-1.15-1.86-.12-1.5-.27-3.01-.28-4.52 0-1.3-.72-1.9-2.25-1.48v4.1c0 .64.03 1.3-.03 1.94-.07.63.34 1.48-.46 1.82-.94.4-2.02.35-2.86-.23-.36-.25-.53-.97-.55-1.49-.12-3.04-.17-6.09-.25-9.13 0-.32-.06-.64-.1-.95v-7.6Zm3.88 5.3h.02V8.7c-.02 1.56-.3 1.85 1.67 1.6.96-.13 1.24-.31 1.24-1.31 0-1.04-.11-2.09-.25-3.12-.04-.25-.34-.55-.6-.66-.36-.14-.78-.14-1.18-.19-.65-.08-.95.19-.9.86.03.59 0 1.18 0 1.77ZM57.68.91c.92.35 1.09 1.06 1.21 2 .74 5.63.39 11.3.86 16.94a4.66 4.66 0 0 1 0 .89c-.07.58-.35.94-1.01.88-.46-.05-.92-.03-1.38-.04-1.15-.04-1.4-.31-1.46-1.45-.09-2.05-.16-4.1-.3-6.14-.03-.4-.27-1.06-.53-1.13a3.65 3.65 0 0 0-1.7.15c-.12.03-.21.5-.2.75.1 1.92.24 3.84.36 5.75.02.35-.03.7-.04 1.05-.02.63-.3.93-.97.89a14.21 14.21 0 0 0-1.78 0c-.75.04-1.14-.31-1.12-1.04.06-1.66.17-3.31.25-4.97.02-.4.07-.83-.02-1.21-.3-1.19.19-2.12.85-3l.17-.23-.15-.14-.97 1.2c-.1-.47-.21-.77-.21-1.08 0-.07.35-.14.7-.27 0-.58.05-1.3-.03-2-.03-.22-.42-.4-.63-.6-.21-.2-.54-.39-.58-.62a33.55 33.55 0 0 1-.25-3.04c-.03-.78.03-1.57.02-2.35 0-.63.18-.97.9-.85.43.06.87 0 1.3 0 1.12-.05 1.45.18 1.53 1.33.1 1.45.1 2.9.16 4.36.02.6.09 1.18.14 1.77.04.44.24.7.72.66.3-.02.6 0 .89 0 .7.03.96-.35.92-1a80.82 80.82 0 0 1-.12-2.51c-.04-1.26-.11-2.53-.06-3.79.01-.4.38-.78.59-1.17h1.94Zm-.81 44.16c-.36-.34-.77-.64-1.07-1.02a5.33 5.33 0 0 0-3.38-1.88c-1-.19-1.13-.66-1.16-1.5-.13-3.94-.31-7.87-.47-11.8a51.93 51.93 0 0 1-.04-2.02c0-1.82.13-1.98 1.92-2.11a251.88 251.88 0 0 1 5.14-.35c1.2-.06 1.66.34 1.81 1.55.25 1.98.18 2.06-1.77 2.06h-2.98c0 1.39-.02 2.7.02 4 0 .12.35.31.54.3.9-.02 1.8-.12 2.72-.15.83-.03 1.11.3 1.13 1.14.01.56.14 1.12.15 1.69.04 1.01-.21 1.26-1.21 1.22-1-.04-1.99-.11-3.08-.17 0 1.57-.03 3.1.04 4.61.01.2.54.53.84.54 1.02.04 2.04-.05 3.07-.08.7-.02 1.42 0 1.82.74v3.23zm-37.45-8.6c0 1.52-.02 3 .01 4.48.02.66-.13 1.2-.7 1.6-.64.43-1.26.92-1.94 1.3-.64.35-1.03.14-1.07-.62-.08-1.42-.08-2.85-.1-4.27-.04-2.02-.1-4.04-.11-6.05-.03-2.31-.05-4.62-.03-6.93 0-1 .54-1.55 1.54-1.55 1.36-.01 2.72.08 4.08.1.59.02 1.2-.1 1.76 0 1.4.24 2.69 1.6 2.93 3 .18.98.6 2 .44 2.91-.21 1.29-.11 2.8-1.38 3.72-.44.32-.4.66-.13 1.03.94 1.3.94 2.84 1 4.34.04 1.36-.16 2.72.5 4.02.34.68-.02 1.15-.8 1.2-.79.03-1.58.09-2.34-.02a1.3 1.3 0 0 1-.88-.75 12.8 12.8 0 0 1-.48-2.6c-.1-1-.1-2-.11-3-.03-1.75-.23-1.94-2.19-1.92Zm-.04-8.73c0 1.23.04 2.36-.02 3.48-.08 1.7-.12 1.7 1.6 1.73.75.01 1.06-.28 1.05-1.04 0-.77-.07-1.55-.03-2.32.08-1.72-.02-1.85-1.72-1.85h-.89Zm22.79 16.83c-.67 0-1.35-.03-2.02 0-.7.04-1.08-.3-1.2-.94a19.5 19.5 0 0 1-.29-2.4c-.15-3.17-.26-6.34-.4-9.52-.04-1-.16-1.98-.18-2.98-.02-1.04.25-1.45 1.25-1.67 1.2-.26 2.09-.79 2.43-2.05.05-.22.35-.5.55-.52.95-.09 1.99-.33 2.84-.06.84.27 1.7.95 2.18 1.7a7.74 7.74 0 0 1 1.36 5.27c-.12 1.1-.05 2.2-.04 3.3.03 1.9.15 3.77.12 5.65a4.26 4.26 0 0 1-3.62 4.07c-.98.14-1.98.15-2.98.22v-.08Zm2.8-9.71h-.13v-.4c-.08-1.8-.1-3.61-.25-5.4-.08-1.15-1.04-1.76-2.13-1.44-.18.05-.4.35-.4.54 0 .76.11 1.53.14 2.3.1 3.25.16 6.5.26 9.76 0 .26.17.75.3.75.57.05 1.2.08 1.72-.12.26-.1.46-.7.47-1.07.04-1.64.01-3.28.01-4.92ZM34 39.56c-.64 0-1.22-.02-1.8 0-.75.04-.76.67-.84 1.18-.15.9-.22 1.81-.34 2.72-.08.56-.38.84-.99.8-.6-.04-1.24 0-1.86-.02-.71-.01-1.1-.41-1-1.13.33-2.53.68-5.07 1.08-7.59.33-2.05.74-4.09 1.13-6.13.27-1.4.52-2.8.88-4.18.17-.67.6-1.2 1.46-1.12.43.04.86.02 1.29.03 1.2.05 1.6.32 1.85 1.47.46 2.09.86 4.19 1.32 6.27.36 1.67.82 3.32 1.15 5 .36 1.79.62 3.6.94 5.4.04.24.1.47.18.7.18.55-.1.94-.56 1.08-.55.15-1.16.14-1.74.2-.88.12-1.29-.4-1.46-1.15-.24-1.13-.45-2.27-.69-3.53m-1.3-6.24-.26-.01c-.04.72-.13 1.44-.12 2.16 0 .23.26.45.4.68.13-.24.4-.5.38-.72-.07-.71-.26-1.41-.4-2.11M14.5 9c.03-1.9.19-3.67 1.12-5.26 1.08-1.86 3-2.6 5.39-2.06a4.5 4.5 0 0 1 3.53 4c.21 1.52-.04 2.92-.35 4.37-.17.8.08 1.68.13 2.52.02.37 0 .74.01 1.1.03.54.05 1.08.11 1.62.02.14.16.27.22.42.67 1.8-.68 4.8-2.47 5.47-1.86.7-3.68.75-5.37-.5a4.27 4.27 0 0 1-1.86-3.4c-.12-2.8-.3-5.6-.46-8.28m3.81 2.48h.23v5.74c0 .83.61 1.5 1.36 1.52.65.01 1.16-.52 1.22-1.34.07-1.01.16-2.03.13-3.04a347.61 347.61 0 0 0-.35-7.9c-.02-.48-.09-1-.3-1.4a1.32 1.32 0 0 0-.92-.6c-1.03-.1-1.39.33-1.38 1.46.02 1.86 0 3.7 0 5.56Zm27.38 8.86c-1.1 1.45-2.6 1.12-3.98 1.07-2.1-.08-3.69-1.65-3.9-3.93-.26-2.63-.4-5.27-.52-7.9-.07-1.55 0-3.11 0-4.67 0-.18.09-.37.14-.55.46-1.53.73-1.69 2.3-1.37.27.05.54.09.8.16 1.26.37 2.3.03 3.24-.87.8-.76 1.23-.69 1.9.18l.14.19c1.48 1.3 1.62 3.04 1.41 4.81a3.14 3.14 0 0 1-.85 1.57c-.13.15-.73-.13-1.09-.3-.87.31-1.54-.05-1.63-1.04-.06-.67-.05-1.35-.12-2.02-.09-.88-.71-1.47-1.43-1.42-.64.06-1.3.87-1.27 1.64l.42 7.35.2 3.46c.06 1 .5 1.55 1.27 1.57 1.09.02 1.36-.32 1.48-1.56.1-1.07-.05-2.15-.02-3.23 0-.26.26-.7.46-.73a13.6 13.6 0 0 1 2.24-.18c.15 0 .4.2.44.37.24.78.54 1.57.61 2.37.14 1.61.13 3.23.2 4.85.03.54.05 1.05-.63 1.18-.61.11-1.17.04-1.55-.55zm-18.8-6.89-.69-.23.8-1.27h-.63c-.22-3-.7-5.95-.52-8.94l.27-.13c.28.22.59.41.82.67.75.85 1.07 2.06 2.15 2.66.13.07.2.32.22.5.25 1.81.46 3.61-.06 5.44-.18.66.01 1.44.09 2.16.08.82.21 1.63.34 2.44.1.72.2 1.45.91 1.89.79.48 1.6.14 1.73-.77.17-1.17.43-2.35.44-3.52.01-1.26-.27-2.52-.33-3.78-.13-2.47-.2-4.95-.27-7.43-.01-.23-.05-.54.08-.7a.98.98 0 0 1 .71-.31c.16 0 .39.34.4.54.12 1.17.17 2.35.26 3.52.02.2.14.4.23.58.16.33.42.65.49 1 .18.94.5 1.8 1.1 2.54.16.2.24.43.24.67-.02.98-.1 1.97-.14 2.95-.02.48 0 .97.02 1.46.05 1.23.24 2.48.11 3.7a2.89 2.89 0 0 1-2 2.45c-2.04.68-4.08.7-5.91-.68-.74-.56-1.27-1.22-1.1-2.25.13-.86.17-1.73.25-2.6.05-.53.31-1.08-.24-1.57-.1-.1.13-.56.24-.98ZM10.58 28.1c0 1.24-.02 2.4 0 3.54.04 1.89.12 3.77.13 5.66 0 .88-.14 1.76-.13 2.65.03 1.2.18 2.4.21 3.6.03 1.06-.33 1.37-1.42 1.32-.43-.01-.86-.07-1.29-.1-1.08-.08-1.14-.13-1.16-1.18l-.17-9.61a304.42 304.42 0 0 1-.04-5.24c0-.54-.17-.75-.75-.73-.88.02-1.77-.08-2.66-.12-.58-.03-.83-.27-.82-.9.04-2.44.02-2.44 2.44-2.44h5.25a1567 1567 0 0 0 3.56 0c.63 0 .94.28.94.93 0 .48.1.96.16 1.44.1.7-.24 1.15-.96 1.17-1.07.03-2.14 0-3.29 0Z"></path>
+                                 </svg>
+                              </h3>
+                              <p class="text-base md:text-xl md:opacity-80">The iconic music brand curating unique vinyl, CDs, and merch. With a strong online presence, Rough Trade is one of the most popular online record stores.</p>
+                           </div>
+                           <dl class="z-10 flex flex-row justify-between self-start">
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Products</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">100,000+</dd>
+                              </div>
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Regions</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">4</dd>
+                              </div>
+                           </dl>
+                        </div>
+                     </article>
+                  </div>
+                  <div role="tabpanel" id="slide-:Ra5sla:-2" aria-hidden="true" tabindex="-1" aria-roledescription="slide" aria-label="3 of 3">
+                     <article class="dark-box flex h-[45rem] w-screen items-end bg-[url('../images/showcases/everyhuman-bg.jpg')] bg-cover bg-left bg-no-repeat">
+                        <div class="mx-auto grid max-w-7xl grid-cols-1 grid-rows-[1fr,min-content] items-end gap-y-12 px-4 pb-28 md:grid-cols-2 md:gap-x-4 md:gap-y-0 lg:gap-x-20">
+                           <div class="z-10">
+                              <h3>
+                                 <span class="sr-only">Everyhuman</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 422 48" class="mb-6 h-12">
+                                    <g clip-path="url(#everyhuman_svg__a)">
+                                       <mask id="everyhuman_svg__c" width="452" height="83" x="-14" y="-17" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                                          <path fill="url(#everyhuman_svg__b)" d="M-13.895-16.42h450.947v81.47H-13.895z"></path>
+                                       </mask>
+                                       <g mask="url(#everyhuman_svg__c)">
+                                          <path fill="#fff" d="M-5.93-29.761h482.816V74.61H-5.93z"></path>
+                                       </g>
+                                    </g>
+                                    <defs>
+                                       <clipPath id="everyhuman_svg__a">
+                                          <path fill="#fff" d="M0 0h421.895v48H0z"></path>
+                                       </clipPath>
+                                       <pattern id="everyhuman_svg__b" width="1" height="1" patternContentUnits="objectBoundingBox">
+                                          <use xlink:href="#everyhuman_svg__d" transform="scale(.00098 .0054)"></use>
+                                       </pattern>
+                                       
+                                       
+                                    </defs>
+                                 </svg>
+                              </h3>
+                              <p class="text-base md:text-xl md:opacity-80">EveryHuman combines the passion for art, science, and technology to create exclusive AI-driven scents. With a unique online experience, EveryHuman guides you to craft your perfect Algorithmic Perfume.</p>
+                           </div>
+                           <dl class="z-10 flex flex-row justify-between self-start">
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Languages supported</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">6</dd>
+                              </div>
+                              <div class="flex min-w-max flex-col border-l-2 border-white border-opacity-50 px-6 md:w-52">
+                                 <dt class="order-1 text-base tracking-tight opacity-80">Regions</dt>
+                                 <dd class="font-heading text-3xl font-semibold md:text-5xl">5</dd>
+                              </div>
+                           </dl>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+               <div role="tablist" aria-label="Slides" class="flex w-full flex-row justify-center gap-x-6 [&amp;>*]:relative [&amp;>*]:before:w-0 max-w-7xl mx-auto -translate-y-16 -mb-1 px-4 rounded-none [&amp;>*:hover]:bg-gray-600 [&amp;>*]:bg-gray-700 [&amp;>*]:before:content-[''] [&amp;>*]:before:absolute [&amp;>*]:before:left-0 [&amp;>*]:before:top-0 [&amp;>*]:before:bottom-0 [&amp;>[aria-selected=" true"]]:before:bg-white="" [&="">[aria-busy="true"]]:before:w-full [&amp;&gt;[aria-busy="true"]]:before:transition-[width] [&amp;&gt;[aria-busy="true"]]:before:ease-linear [&amp;&gt;[aria-busy="true"]]:before:duration-[10000ms]"&gt;<button type="button" role="tab" aria-label="Go to slide 1" aria-selected="true" aria-controls="slide-:Ra5sla:-0" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 2" aria-selected="false" aria-controls="slide-:Ra5sla:-1" aria-busy="false" class="block h-1 flex-1 transition-colors"></button><button type="button" role="tab" aria-label="Go to slide 3" aria-selected="false" aria-controls="slide-:Ra5sla:-2" aria-busy="false" class="block h-1 flex-1 transition-colors"></button>
+            </div>
+            </div>
+         </section>
+         <div class="border-y border-gray-300 bg-white py-12 -mt-8 md:-mt-16">
+            <section id="cta" class="mx-auto w-full max-w-7xl px-4 flex flex-col gap-y-8 md:flex-row md:items-center md:justify-between md:gap-x-16">
+               <div>
+                  <h2 class="font-heading text-3xl text-gray-900">Reach global scale</h2>
+                  <p class="mt-4 text-base text-gray-600">Launch new regions and channels in days. Expand internationally with the fastest time to multiple markets thanks to Saleor’s composable, headless architecture.</p>
+               </div>
+               <div class="grid gap-4 md:grid-cols-[repeat(2,150px)]"><a target="_blank" class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-gray-300 bg-white text-gray-900 shadow-sm hover:bg-gray-100  focus-visible:bg-gray-100 active:bg-gray-100 disabled:cursor-default disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-400 aria-disabled:cursor-default aria-disabled:border-gray-200 aria-disabled:bg-gray-50 aria-disabled:text-gray-400 h-12 px-4 text-base font-semibold tracking-wide" href="https://saleor.typeform.com/request-demo">Book a demo</a><a class="inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-12 px-4 text-base font-semibold tracking-wide" href="https://cloud.saleor.io/signup">Sign up</a></div>
+            </section>
+         </div>
+      </main>
+      <footer class="bg-white" aria-labelledby="footer">
+         <h2 id="footer" class="sr-only">Footer</h2>
+         <div class="mx-auto flex max-w-7xl flex-row flex-wrap gap-16 px-6 py-12 sm:py-12 lg:px-8 lg:py-16">
+            <div class="min-w-fit flex-1">
+               <h3 class="font-heading text-sm font-semibold uppercase text-gray-900">Product</h3>
+               <ul role="list" class="mt-4 space-y-2">
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/features/merchandising">Core Functionalities</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/features/merchandising">Merchandising</a></li>
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://docs.saleor.io/docs/3.x/overview/why-saleor/headless">API-driven</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/contact">Launch &amp; Success Support</a></li>
+               </ul>
+            </div>
+            <div class="min-w-fit flex-1">
+               <h3 class="font-heading text-sm font-semibold uppercase text-gray-900">Solutions</h3>
+               <ul role="list" class="mt-4 space-y-2">
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/magento">Magento Migration</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/open-source">Open source</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/contact">Custom development</a></li>
+               </ul>
+            </div>
+            <div class="min-w-fit flex-1">
+               <h3 class="font-heading text-sm font-semibold uppercase text-gray-900">Developers</h3>
+               <ul role="list" class="mt-4 space-y-2">
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://docs.saleor.io/">API Documentation</a></li>
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://saleor.typeform.com/request-demo?utm_source=internal&amp;utm_medium=contact&amp;utm_campaign=partnership">Become a partner</a></li>
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://github.com/orgs/saleor/projects/3/views/1">Roadmap</a></li>
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://github.com/saleor/saleor/discussions">Open source community</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/telemetry">Telemetry</a></li>
+               </ul>
+            </div>
+            <div class="min-w-fit flex-1">
+               <h3 class="font-heading text-sm font-semibold uppercase text-gray-900">Company</h3>
+               <ul role="list" class="mt-4 space-y-2">
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://saleor.typeform.com/to/JTJK0Nou">Newsletter</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/blog">Blog</a></li>
+                  <li><a class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="/contact">Contact us</a></li>
+                  <li><a target="_blank" class="text-sm leading-6 text-gray-600 hover:text-gray-700" href="https://jobs.lever.co/Saleor">Careers</a></li>
+               </ul>
+            </div>
+            <div class="flex w-full justify-between text-sm">
+               <div class="text-sm text-gray-600">
+                  <span>
+                     © Copyright 2018 - <!-- -->2024<!-- --> Saleor Commerce
+                  </span>
+                  <a class="ml-4 hover:text-gray-700" href="/legal/terms">
+                     <!-- -->Terms of use<!-- --> 
+                  </a>
+                  <a class="ml-4 hover:text-gray-700" href="/legal/privacy">
+                     <!-- -->Privacy policy<!-- --> 
+                  </a>
+               </div>
+               <div class="flex space-x-2">
+                  <a target="_blank" aria-label="GitHub" href="https://github.com/saleor">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19" class="h-5 w-5 text-gray-500 hover:text-gray-700">
+                        <path fill="currentColor" d="M10.3 0A9.4 9.4 0 0 0 .9 9.4a9.4 9.4 0 0 0 6.4 9c.5 0 .7-.2.7-.5v-1.6c-2.7.6-3.2-1.2-3.2-1.2-.4-1.1-1-1.4-1-1.4-.9-.6 0-.6 0-.6 1 0 1.5 1 1.5 1 .8 1.4 2.1 1 2.7.8 0-.6.3-1 .6-1.3-2.1-.2-4.3-1-4.3-4.6 0-1 .4-2 1-2.6a3.4 3.4 0 0 1 0-2.5s.8-.2 2.6 1a8.9 8.9 0 0 1 4.7 0c1.8-1.2 2.6-1 2.6-1 .5 1.3.1 2.3 0 2.5.6.7 1 1.5 1 2.6 0 3.6-2.2 4.4-4.3 4.6.4.3.7.9.7 1.7V18c0 .3.1.6.6.5a9.4 9.4 0 0 0 6.4-9c0-5.2-4.2-9.4-9.3-9.4Z"></path>
+                     </svg>
+                  </a>
+                  <a target="_blank" aria-label="Discord" href="https://discord.com/invite/H52JTZAtSH">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 20" class="h-5 w-5 text-gray-500 hover:text-gray-700">
+                        <path fill="currentColor" d="M20.83 2.27A19.55 19.55 0 0 0 15.88.7c-.21.39-.46.9-.64 1.32a18.18 18.18 0 0 0-5.48 0c-.17-.41-.43-.93-.64-1.32-1.74.3-3.4.83-4.96 1.56A20.77 20.77 0 0 0 .6 16.17a19.8 19.8 0 0 0 6.07 3.12c.5-.68.93-1.4 1.3-2.14a13.3 13.3 0 0 1-2.04-1l.5-.4a14 14 0 0 0 12.14 0l.5.4c-.65.39-1.33.73-2.05 1 .38.75.81 1.47 1.3 2.14 1.98-.62 4-1.56 6.08-3.11a20.7 20.7 0 0 0-3.57-13.91M8.51 13.37c-1.18 0-2.15-1.1-2.15-2.45S7.3 8.47 8.5 8.47s2.18 1.1 2.16 2.45c0 1.35-.95 2.46-2.16 2.46Zm7.98 0c-1.19 0-2.16-1.1-2.16-2.45s.95-2.45 2.16-2.45c1.2 0 2.18 1.1 2.15 2.45 0 1.35-.95 2.46-2.15 2.46Z"></path>
+                     </svg>
+                  </a>
+                  <a target="_blank" aria-label="X.com" href="https://twitter.com/getsaleor">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-gray-500 hover:text-gray-700">
+                        <path fill="currentColor" fill-rule="evenodd" d="M1 1.563h5.906l4.201 5.861 5.08-5.861h2.25l-6.311 7.282L19 18.438h-5.906l-4.201-5.862-5.08 5.861h-2.25l6.311-7.282zM13.96 16.75 4.285 3.25H6.04l9.675 13.5z" clip-rule="evenodd"></path>
+                     </svg>
+                  </a>
+                  <a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/company/saleor/">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="h-5 w-5 text-gray-500 hover:text-gray-700">
+                        <path fill="currentColor" d="M15 1H5C2.93 1 1 2.93 1 5v10c0 2.07 1.93 4 4 4h10c2.072 0 4-1.93 4-4V5c0-2.07-1.928-4-4-4M7 15.25H4.75V7H7zM5.875 6.049a1.318 1.318 0 0 1-1.312-1.323c0-.73.588-1.323 1.312-1.323.724 0 1.313.592 1.313 1.323 0 .73-.588 1.323-1.313 1.323M16 15.25h-2.25v-4.203c0-2.526-3-2.335-3 0v4.203H8.5V7h2.25v1.324C11.797 6.384 16 6.24 16 10.18z"></path>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="transition-opacity duration-1000 pointer-events-none opacity-0">
+         <div class="fixed bottom-2 left-2 right-2 z-50 rounded-lg border border-gray-300 bg-white p-4 shadow-md sm:bottom-5 sm:left-auto sm:right-5 sm:max-w-sm">
+            <p class="text-base">
+               By accepting our usage of third-party software such as Google Tag Manager, you help us to deliver a better website experience to all our users. To see our full privacy policy,<!-- --> <a class="underline" href="/legal/privacy">click here<span class="sr-only"> (links to Privacy Policy)</span></a>.
+            </p>
+            <div class="mt-4 flex flex-row gap-x-2"><button type="button" class="w-20 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-transparent bg-gray-900 text-white shadow-sm hover:bg-black focus-visible:bg-black active:bg-black disabled:cursor-default disabled:bg-gray-200 disabled:text-gray-500 aria-disabled:cursor-default aria-disabled:bg-gray-200 aria-disabled:text-gray-500 h-10 px-3 text-sm font-semibold tracking-wide">Accept</button><button type="button" class="w-20 inline-flex cursor-pointer items-center justify-center rounded-md border transition-colors duration-75 ease-out border-gray-300 bg-white text-gray-900 shadow-sm hover:bg-gray-100  focus-visible:bg-gray-100 active:bg-gray-100 disabled:cursor-default disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-400 aria-disabled:cursor-default aria-disabled:border-gray-200 aria-disabled:bg-gray-50 aria-disabled:text-gray-400 h-10 px-3 text-sm font-semibold tracking-wide">Close</button></div>
+         </div>
+      </div>
+   </body>
+</html>

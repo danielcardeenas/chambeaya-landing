@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 305 117" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">
+  <rect width="304" height="116" x=".5" y=".5" fill="#0E1318" rx="8.5"/>
+  <rect width="304" height="116" x=".5" y=".5" fill="url(#a)" fill-opacity=".1" rx="8.5"/>
+  <rect width="304" height="116" x=".5" y=".5" stroke="#32363B" rx="8.5"/>
+  <line x1="0" y1="43" x2="305" y2="43" stroke="#fff" stroke-opacity=".15"/>
+  <path fill="#fff" fill-rule="evenodd" d="M29.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm15 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" clip-rule="evenodd" opacity=".2"/>
+  <text xml:space="preserve" fill="#fff" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="39.41" y="82.66">&gt; docker compose build</tspan></text>
+  <text xml:space="preserve" fill="#fff" fill-opacity=".4" font-size="12" letter-spacing="0" style="white-space:pre"><tspan x="25" y="64.66">
+</tspan><tspan x="25" y="82.66">  </tspan><tspan x="183.56" y="82.66">
+</tspan></text>
+  <defs>
+    <linearGradient id="a" x1="152.5" x2="152.5" y1="1" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".59"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
